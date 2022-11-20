@@ -983,6 +983,12 @@ width: 100%;
   .services .cards .card-wrap {
     width: 300px;
   }
+  
+  .services .cards .card-wrap .card .card-content .tit {
+
+     padding: 50px;
+
+  }
 
   .sobremi .fila .col .contenedor-intereses .interes {
     display: grid;
