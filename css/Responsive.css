@@ -1005,6 +1005,26 @@
     width: 90px;
     height: 90px;
   }
-}
 
+  .contenedor-interesesFormacion {
+    width: 100%;
+  }
+
+  .contenedor-interesesFormacion .cards .card {
+    width: 200px;
+    height: 200px;
+    overflow: visible;
+  }
+  
+  .contenedor-interesesFormacion .cards .card-wrap .card .card-content {
+    overflow: visible;
+    width: 250px;
+    height: 200px;
+  }
+  
+  .contenedor-interesesFormacion .cards .card-wrap .card .contIcons img {
+    width: 100px;
+    border-radius: 10px;
+  }
+}
 /* End Responsive */
