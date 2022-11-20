@@ -1,0 +1,182 @@
+/* Sobre mi */
+.sobremi {
+  margin-top: 100px;
+  background-color: #111113;
+  color: #ebebee;
+  padding: 100px 30px;
+}
+
+.sobremi .contenido-seccion {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sobremi .section-header p {
+  text-align: justify;
+}
+
+.sobremi h2 {
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+}
+
+.col button {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid var(--verdin);
+  color: #111113;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+}
+
+.col button .overlay {
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: var(--verdin);
+  z-index: -1;
+  transition: 1s;
+}
+
+.col button:hover .overlay {
+  width: 100%;
+}
+
+.cargo {
+  color: var(--verdin);
+}
+
+.sobremi .fila {
+  display: inline;
+  text-align: center;
+}
+
+.sobremi .fila .col {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobremi .fila .col h3 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.sobremi .fila .col ul {
+  list-style: none;
+}
+
+.sobremi .fila .col ul li {
+  margin: 20px 0;
+}
+
+.sobremi .fila .col ul li strong {
+  display: inlinfe-block;
+  color: var(--verdin);
+  width: 130px;
+}
+
+.sobremi .fila .col ul li {
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+
+}
+
+#datosPersonales {
+  padding-bottom: 30px;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes {
+  width: 130px;
+  height: 130px;
+  background-color: #252A2E;
+  color: #fff;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .int1:hover {
+  color: #111113;
+  font-weight: bold;
+  background-color: #706CE7;
+}
+
+.sobremi .fila .col .contenedor-intereses .int2:hover {
+  color: #111113;
+  font-weight: bold;
+  background-color: #F5D755;
+}
+
+.sobremi .fila .col .contenedor-intereses .int3:hover {
+  color: #111113;
+  font-weight: bold;
+  background-color: #F77D8C;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contenedor-interesesFormacion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.contenedor-interesesFormacion .cards .card-wrap .card .contIcons {
+  padding-bottom: 30px;
+}
+
+.contenedor-interesesFormacion .cards .card-wrap {
+  margin: 0px;
+}
+
+.contenedor-interesesFormacion .cards .card-wrap .card .card-content {
+  overflow: visible;
+  width: 300px;
+  height: 300px;
+}
+
+.contenedor-interesesFormacion .cards .card-wrap .card .contIcons img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.contenedor-interesesFormacion .cards .card-wrap:hover {
+  transform: translate(0%);
+  background-color: #111113;
+}
+
+.contenedor-interesesFormacion .cards .card-wrap .card:hover {
+  background-color: #111113;
+  color: #c2c2ca;
+}
+/* Sobre mi */

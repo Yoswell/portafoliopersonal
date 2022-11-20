@@ -1,0 +1,144 @@
+/* Contact */
+  .contact {
+    position: relative;
+    width: 100%;
+  }
+  
+  .contact:before,
+  .contact:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+  }
+  
+  .contact:before {
+    top: 0;
+    height: 30%;
+  }
+  
+  .contact:after {
+    top: 40%;
+    height: 60%;
+  }
+  
+  .contact-box {
+    width: 100%;
+    background-color: #111113;
+    width: 100%;
+    border-radius: 45px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info .title:after {
+    left: 0;
+    transform: initial;
+  }
+
+  .contact-form {
+    padding-left: 40px;
+  }
+  
+  .information-wrap {
+    margin-top: 2rem;
+  }
+  
+  .information {
+    display: flex;
+    align-items: center;
+  }
+
+  .info1:hover {
+    background-color: #706CE7;
+  }
+  .info2:hover {
+    background-color: #F5D755;
+  }
+  .info3:hover {
+    background-color: #F77D8C;
+  }
+  
+  .information:not(:last-child) {
+    margin-bottom: 1.3rem;
+  }
+  
+  .contact-icon {
+    min-width: 67px;
+    height: 67px;
+    display: inline-block;
+    background-color: var(--verdin);
+    border-radius: 50%;
+    color: var(--light-thoro);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  
+  .contact-icon i {
+    line-height: 67px;
+  }
+
+  .contact h2 {
+    padding-bottom: 2rem;
+    color: var(--light-three);
+  }
+  
+  .info-text {
+    display: inline-block;
+    color: var(--light-three);
+  }
+  
+  .contact-form .title:after {
+    display: none;
+  }
+  
+  .contact-form .title {
+    margin: 0;
+  }
+  
+  .contact-form .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-column-gap: 0.6rem;
+  }
+  
+  .contact-input {
+    padding: 1.2rem 2.1rem;
+    margin: 0.6rem 0;
+    border: none;
+    outline: none;
+    background: var(--light-thoro);
+    color: #eaeaea;
+    border-radius: 4rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: 0.3s;
+  }
+  
+  .contact-input::placeholder {
+    font-weight: 400;
+  }
+  
+  .contact-input.textarea {
+    resize: none;
+    min-width: 530px;
+    min-height: 280px;
+    border-radius: 2rem;
+  }
+  
+  .contact-input:focus {
+    background: #eaeaea;
+    color: #111113;
+  }
+  
+  .contact-input .btn {
+    margin-top: 0.6rem;
+  }
+  /* End Contact */  
