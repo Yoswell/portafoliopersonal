@@ -137,20 +137,12 @@
     margin: 1rem 0.6rem;
   }
 
-  .services .points1 {
-    left: -60px;
-  }
-
   .points-sq {
     width: 150px;
   }
 
   .grid {
     margin: 0.8rem 0;
-  }
-
-  .grid-item {
-    padding: 0.8rem;
   }
 
   .gallery-image {
@@ -711,8 +703,7 @@
     position: relative;
     top: 60px;
     padding-bottom: 40px;
-
-width: 100%;
+    width: 100%;
   }
 
   .title {
@@ -985,9 +976,7 @@ width: 100%;
   }
   
   .services .cards .card-wrap .card .card-content .tit {
-
      padding: 50px;
-
   }
 
   .sobremi .fila .col .contenedor-intereses .interes {
