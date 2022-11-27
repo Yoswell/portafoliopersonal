@@ -1021,5 +1021,8 @@
     width: 100px;
     border-radius: 10px;
   }
+  .baseIamgenYos img {
+    width: 250px;
+  }
 }
 /* End Responsive */
