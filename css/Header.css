@@ -1,213 +1,221 @@
 /* Header */
 header {
-    padding-top: 90px;
-    width: 100%;
-    height: 97vh;
-    background-color: #111113;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  nav {
-    width: 100%;
-    position: fixed;
-    z-index: 50;
-    margin-top: -90px;
-    background-color: #111113;
-    border-radius: 0 0 90px 90px;
-    border: solid 3px #232427;
-  }
-  
-  nav .container {
-    display: flex;
-    justify-content: space-between;
-    height: 5rem;
-    align-items: center;
-  }
-  
-  .logo {
-    margin-top: 10px;
-    margin-left: -80px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .links ul {
-    display: flex;
-  }
-  
-  .links a {
-    display: inline-block;
-    padding: 1rem 1.9rem;
-    color: var(--white-there);
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    font-weight: 550;
-    line-height: 1;
-  }
-  
-  .links a:hover {
-    display: inline-block;
-    padding: 0.9rem 1.2rem;
-    color: var(--verdin);
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    font-weight: 550;
-    line-height: 1;
-  }
-  
-  .links button.active {
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: 30px;
-    border: 2px solid var(--verdin);
-    color: #111113;
-    display: block;
-    padding: 10px 52px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    position: relative;
-    z-index: 10;
-  }
-  
-  .links button.active .overlay{
-    border-radius: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 100%;
-    background-color: var(--verdin);
-    z-index: -1;
-    transition: 0.5s;
-  }
-  
-  .links button:hover .overlay{
-    width: 100%;
-  }
+  padding-top: 90px;
+  width: 100%;
+  height: 100vh;
+  background-color: #111113;
+  overflow: hidden;
+}
 
-  .hamburger-menu {
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-    color: var(--light-three);
-    font-size: 1.2rem;
-    transition: 0.3s;
-    position: relative;
-    z-index: 2;
-    top: 1px;
-  }
-  
-  .hamburger-menu .bar {
-    position: relative;
-    width: 2.1rem;
-    height: 2px;
-    border-radius: 3px;
-    background-color: var(--verdin);
-    transition: 0.5s;
-    z-index: 1000;
-  }
-  
-  .bar:before,
-  .bar:after {
-    content: "";
-    position: absolute;
-    width: 2.1rem;
-    height: 2px;
-    border-radius: 3px;
-    background-color: var(--verdin);
-    transition: 3s;
-  }
-  
-  .bar:before {
-    transform: translateY(-9px);
-  }
-  
-  .bar:after {
-    transform: translateY(9px);
-  }
-  
-  nav.open .links {
-    transform: translateX(0%);
-    background-color: #232427;
-  }
-  
-  .header-content .container.grid-2 {
-    grid-template-columns: 2.5fr 3.5fr;
-    min-height: calc(100vh - 6rem);
-    padding-bottom: 2.5rem;
-    text-align: left;
-  }
-  
-  .header-title {
-    font-size: 3.3rem;
-    color: var(--white-there);
-    font-family: 'Fredericka the Great', cursive;
-  }
-  
-  .header-content .text {
-    margin: 1.5rem 0;
-  }
+.wave2 {
+  top: -200px;
+}
 
-  .column-1 .contButtonsHeader {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  margin-top: -90px;
+  background-color: #111113;
+  border-radius: 0 0 90px 90px;
+  border: solid 3px #232427;
+}
 
-  .social-medias {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 20px;
-  }
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  height: 4.5rem;
+  align-items: center;
+}
 
-  .social-medias a {
-    margin: 8px;
-    font-size: 2rem;
-    color: #7b7b7b;
-    transition: 0.3s;
-  }
+.logo {
+  margin-top: 10px;
+  margin-left: -80px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
 
-  .social-medias a:nth-child(1):hover {
-    color: #706CE7;
-  }
-  .social-medias a:nth-child(2):hover {
-    color: #F5D755;
-  }
-  .social-medias a:nth-child(3):hover {
-    color: #F5D755;
-  }
-  .social-medias a:nth-child(4):hover {
-    color: #F77D8C;
-  }
+.links ul {
+  display: flex;
+}
 
-  .column-1 {
-    padding: 10px;
-    text-align: justify;
-  }
+.links a {
+  display: inline-block;
+  padding: 1rem 1.9rem;
+  color: var(--white-there);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 550;
+  line-height: 1;
+}
 
-  .btn1,
-  .btn2 {
-    width: 30px;
-    height: 30px;
-    background-color: var(--verdin);
-    border: none;
-    border-radius: 50%;
-    transition: 0.3s;
-  }
+.links a:hover {
+  display: inline-block;
+  padding: 0.9rem 1.2rem;
+  color: var(--verdin);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 550;
+  line-height: 1;
+}
 
-  .btn1:hover {
-    background-color: #706CE7;
-  }
-  .principal:hover {
-    background-color: #F5D755;
-  }
-  .btn2:hover {
-    background-color: #F77D8C;
-  }
-  /* End header */
-  
+.links button.active {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid var(--verdin);
+  color: #111113;
+  display: block;
+  padding: 10px 52px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+}
+
+.links button.active .overlay {
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: var(--verdin);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.links button:hover .overlay {
+  width: 100%;
+}
+
+.hamburger-menu {
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  color: var(--light-three);
+  font-size: 1.2rem;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+  top: 1px;
+}
+
+.hamburger-menu .bar {
+  position: relative;
+  width: 2.1rem;
+  height: 2px;
+  border-radius: 3px;
+  background-color: var(--verdin);
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  position: absolute;
+  width: 2.1rem;
+  height: 2px;
+  border-radius: 3px;
+  background-color: var(--verdin);
+  transition: 3s;
+}
+
+.bar:before {
+  transform: translateY(-9px);
+}
+
+.bar:after {
+  transform: translateY(9px);
+}
+
+nav.open .links {
+  transform: translateX(0%);
+  background-color: #232427;
+}
+
+.header-content .container.grid-2 {
+  grid-template-columns: 2.5fr 3.5fr;
+  min-height: calc(100vh - 6rem);
+  padding-bottom: 2.5rem;
+  text-align: left;
+}
+
+.header-title {
+  font-size: 3.3rem;
+  color: var(--white-there);
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.header-content .text {
+  margin: 1.5rem 0;
+}
+
+.column-1 .contButtonsHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-medias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.social-medias a {
+  margin: 8px;
+  font-size: 2rem;
+  color: #7b7b7b;
+  transition: 0.3s;
+}
+
+.social-medias a:nth-child(1):hover {
+  color: #706CE7;
+}
+
+.social-medias a:nth-child(2):hover {
+  color: #F5D755;
+}
+
+.social-medias a:nth-child(3):hover {
+  color: #F5D755;
+}
+
+.social-medias a:nth-child(4):hover {
+  color: #F77D8C;
+}
+
+.column-1 {
+  padding: 10px;
+  text-align: justify;
+}
+
+.btn1,
+.btn2 {
+  width: 30px;
+  height: 30px;
+  background-color: var(--verdin);
+  border: none;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.btn1:hover {
+  background-color: #706CE7;
+}
+
+.principal:hover {
+  background-color: #F5D755;
+}
+
+.btn2:hover {
+  background-color: #F77D8C;
+}
+
+/* End header */
