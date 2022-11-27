@@ -67,7 +67,6 @@
     visibility: hidden;
   }
 
-
   .overlay.overlay-sm .shape {
     height: 24px;
     visibility: hidden;
@@ -227,7 +226,7 @@
     padding: 2.5rem 1.3rem;
   }
 
-  .blog-info > * {
+  .blog-info>* {
     font-size: 0.75rem !important;
   }
 
@@ -286,10 +285,6 @@
     margin-top: -130px;
   }
 
-  .contact-form {
-    padding-left: 1rem;
-  }
-
   .contact-info {
     padding-right: 1rem;
   }
@@ -315,12 +310,6 @@
 
   .info-text {
     font-size: 1.05rem;
-  }
-
-  .contact-input {
-    font-size: 0.9rem;
-    padding: 0.9rem 1.6rem;
-    margin: 0.4rem 0;
   }
 
   .hireme {
@@ -414,10 +403,6 @@
     left: 4rem;
   }
 
-  .contact-form {
-    display: none;
-  }
-
   .contact .contact-info h2 {
     padding-left: 20px;
   }
@@ -426,8 +411,8 @@
     padding-left: 20px;
   }
 
-  .skills .fila .col .barra-skill{
-      width: 100%;
+  .skills .fila .col .barra-skill {
+    width: 100%;
   }
 
   #services {
@@ -441,7 +426,7 @@
   #skills {
     margin-top: 40px;
   }
-  
+
   .links button.active {
     height: 50px;
     width: 180px;
@@ -452,6 +437,7 @@
   .footer .footer-newstletter {
     display: none;
   }
+
   header {
     height: 80rem;
   }
@@ -467,7 +453,7 @@
   header nav .container .logo {
     display: none;
   }
-  
+
   header nav {
     display: flex;
     align-items: center;
@@ -673,7 +659,7 @@
     font-size: 2rem;
   }
 
-  .sobremi{
+  .sobremi {
     position: relative;
     text-align: justify;
   }
@@ -691,13 +677,13 @@
     font-size: 1.8em;
   }
 
-  #datosPersonales{
+  #datosPersonales {
     position: relative;
     text-align: center;
     padding-top: 30px;
   }
 
-  #intereses{
+  #intereses {
     display: inline-block;
     flex-wrap: wrap;
     position: relative;
@@ -717,15 +703,15 @@
   .records .container {
     grid-template-columns: 1fr;
   }
-  
-  .skills .fila .col{
-      width: 10%;
+
+  .skills .fila .col {
+    width: 10%;
   }
-  
-  .skills .fila .col .barra-skill{
-      width: 100%;
+
+  .skills .fila .col .barra-skill {
+    width: 100%;
   }
-  
+
   .testi-content {
     margin-top: 1rem;
   }
@@ -750,7 +736,7 @@
   .swiper-button-prev {
     right: 3rem;
   }
-  
+
   .contact-info {
     display: flex;
     align-items: center;
@@ -760,10 +746,6 @@
 
   .contact-info .text {
     text-align: center;
-  }
-
-  .contact-form {
-    display: none;
   }
 
   .column-2 img {
@@ -834,7 +816,7 @@
     height: 400px;
   }
 
-  .cardPortafolio  .card-contentPortafolio {
+  .cardPortafolio .card-contentPortafolio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -900,11 +882,11 @@
     font-size: 0.8rem;
   }
 
-  .bottom-footer .followme-wrap .followme h3{
+  .bottom-footer .followme-wrap .followme h3 {
     font-size: 1rem;
   }
 
-  .bottom-footer .followme-wrap .followme i{
+  .bottom-footer .followme-wrap .followme i {
     display: flex;
     font-size: 0.8rem;
   }
@@ -926,7 +908,7 @@
     width: 150px;
   }
 
-  .grid-4 .footer-links a{
+  .grid-4 .footer-links a {
     font-size: 0.8rem;
   }
 
@@ -956,9 +938,13 @@
   .contact-info .text {
     text-align: center;
   }
+
+  .contact-box .contact-form {
+    display: flex;
+  }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 390px) {
   .contenedor-interesesFormacion {
     width: 200px;
   }
@@ -974,9 +960,9 @@
   .services .cards .card-wrap {
     width: 300px;
   }
-  
+
   .services .cards .card-wrap .card .card-content .tit {
-     padding: 50px;
+    padding: 50px;
   }
 
   .sobremi .fila .col .contenedor-intereses .interes {
@@ -1010,19 +996,46 @@
     height: 200px;
     overflow: visible;
   }
-  
+
   .contenedor-interesesFormacion .cards .card-wrap .card .card-content {
     overflow: visible;
     width: 250px;
     height: 200px;
   }
-  
+
   .contenedor-interesesFormacion .cards .card-wrap .card .contIcons img {
     width: 100px;
     border-radius: 10px;
   }
-  .baseIamgenYos img {
-    width: 250px;
+
+  .column-2 img {
+    width: 300px;
+  }
+
+  .contact-box {
+    padding: 0;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  .contact-form h2 {
+    font-size: 2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-input {
+    width: 100%;
+  }
+  
+  .row textarea {
+    width: 100%;
   }
 }
+
 /* End Responsive */
