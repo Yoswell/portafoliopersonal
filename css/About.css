@@ -152,6 +152,33 @@
   padding-top: 30px;
 }
 
+.contenedor-interesesFormacion .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contBarras {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contBarras .C {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.contBarras .D {
+  width: 80%;
+  margin: 10px;
+}
+
+.barra1{
+  width: 10%;
+}
+
 .contenedor-interesesFormacion .cards .card-wrap .card .contIcons {
   padding-bottom: 30px;
 }
