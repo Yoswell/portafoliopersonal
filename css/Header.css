@@ -2,13 +2,9 @@
 header {
   padding-top: 90px;
   width: 100%;
-  height: 100vh;
-  background-color: #111113;
+  height: 100%;
+  background-color: #17171a;
   overflow: hidden;
-}
-
-.wave2 {
-  top: -200px;
 }
 
 nav {
@@ -16,9 +12,42 @@ nav {
   position: fixed;
   z-index: 50;
   margin-top: -90px;
-  background-color: #111113;
-  border-radius: 0 0 90px 90px;
-  border: solid 3px #232427;
+  background-color: #24252a;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  transition: 1.0s;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--verdin);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 1.0s;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: var(--verdin);
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+
+::-webkit-scrollbar-thumb:vertical:active,
+::-webkit-scrollbar-thumb:horizontal:active {
+  background: var(--verdin);
+}
+
+::-webkit-scrollbar-corner {
+  background: none;
 }
 
 nav .container {
@@ -28,17 +57,7 @@ nav .container {
   align-items: center;
 }
 
-.logo {
-  margin-top: 10px;
-  margin-left: -80px;
-  width: 200px;
-  display: flex;
-  align-items: center;
-}
-
-.links ul {
-  display: flex;
-}
+.links ul { display: flex; }
 
 .links a {
   display: inline-block;
@@ -62,32 +81,18 @@ nav .container {
 
 .links button.active {
   cursor: pointer;
-  background-color: transparent;
   border-radius: 30px;
-  border: 2px solid var(--verdin);
-  color: #111113;
+  border: none;
+  background-color: var(--verdin);
+  color: #17171a;
   display: block;
-  padding: 10px 52px;
+  width: 150px;
+  height: 45px;
   font-size: 1.2rem;
   font-weight: 600;
   position: relative;
   z-index: 10;
-}
-
-.links button.active .overlay {
-  border-radius: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  background-color: var(--verdin);
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.links button:hover .overlay {
-  width: 100%;
+  text-transform: uppercase;
 }
 
 .hamburger-menu {
@@ -124,35 +129,12 @@ nav .container {
   transition: 3s;
 }
 
-.bar:before {
-  transform: translateY(-9px);
-}
+.bar:before { transform: translateY(-9px); }
+.bar:after { transform: translateY(9px); }
+nav.open .links { transform: translateX(0%); background-color: #17171a; }
 
-.bar:after {
-  transform: translateY(9px);
-}
-
-nav.open .links {
-  transform: translateX(0%);
-  background-color: #232427;
-}
-
-.header-content .container.grid-2 {
-  grid-template-columns: 2.5fr 3.5fr;
-  min-height: calc(100vh - 6rem);
-  padding-bottom: 2.5rem;
-  text-align: left;
-}
-
-.header-title {
-  font-size: 3.3rem;
-  color: var(--white-there);
-  font-family: 'Fredericka the Great', cursive;
-}
-
-.header-content .text {
-  margin: 1.5rem 0;
-}
+.header-title { font-size: 3.3rem; color: var(--white-there); font-family: 'Fredericka the Great', cursive; }
+.header-content .text { margin: 1.5rem 0; }
 
 .column-1 .contButtonsHeader {
   width: 100%;
@@ -165,36 +147,27 @@ nav.open .links {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 20px;
 }
 
 .social-medias a {
-  margin: 8px;
-  font-size: 2rem;
-  color: #7b7b7b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: #a8a4a4;
   transition: 0.3s;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #17171a;
+  background-color: #24252a;
+  border-radius: 50%;
 }
 
-.social-medias a:nth-child(1):hover {
-  color: #706CE7;
-}
-
-.social-medias a:nth-child(2):hover {
-  color: #F5D755;
-}
-
-.social-medias a:nth-child(3):hover {
-  color: #F5D755;
-}
-
-.social-medias a:nth-child(4):hover {
-  color: #F77D8C;
-}
-
-.column-1 {
-  padding: 10px;
-  text-align: justify;
-}
+.social-medias a:nth-child(1):hover { color: #706CE7; }
+.social-medias a:nth-child(2):hover { color: #F5D755; }
+.social-medias a:nth-child(3):hover { color: #F5D755; }
+.social-medias a:nth-child(4):hover { color: #F77D8C; }
+.column-1 { padding: 10px; text-align: justify; }
 
 .btn1,
 .btn2 {
@@ -206,16 +179,11 @@ nav.open .links {
   transition: 0.3s;
 }
 
-.btn1:hover {
-  background-color: #706CE7;
-}
+.btn1:hover { background-color: #706CE7; }
+.principal:hover { background-color: #F5D755; }
+.btn2:hover { background-color: #F77D8C; }
 
-.principal:hover {
-  background-color: #F5D755;
+.header-content {
+  padding-bottom: 100px;
 }
-
-.btn2:hover {
-  background-color: #F77D8C;
-}
-
 /* End header */
