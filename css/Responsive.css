@@ -16,7 +16,6 @@
   .hamburger-menu { display: none; }
 }
 
-
 @media (max-width: 1280px) {
   .text { font-size: 1rem; }
 
