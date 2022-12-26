@@ -16,8 +16,8 @@ nav {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   transition: 1.0s;
 }
 
@@ -39,8 +39,6 @@ nav {
   background-color: transparent;
 }
 
-
-
 ::-webkit-scrollbar-thumb:vertical:active,
 ::-webkit-scrollbar-thumb:horizontal:active {
   background: var(--verdin);
@@ -52,7 +50,8 @@ nav {
 
 nav .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
   height: 4.5rem;
   align-items: center;
 }
@@ -79,7 +78,7 @@ nav .container {
   line-height: 1;
 }
 
-.links button.active {
+.links a.active {
   cursor: pointer;
   border-radius: 30px;
   border: none;
@@ -93,6 +92,10 @@ nav .container {
   position: relative;
   z-index: 10;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
 }
 
 .hamburger-menu {
