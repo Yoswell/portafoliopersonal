@@ -1,5 +1,5 @@
 /* Contact */
-.contact { position: relative; width: 100%; }
+.contact { position: relative; width: 100%; padding-top: 120px;}
 .contact:before,
 .contact:after {
   content: "";
@@ -91,7 +91,7 @@
   border: none;
   outline: none;
   background: #24252a;
-  color: #eaeaea;
+  color: var(--light-three); ;
   border-radius: 20px;
   font-weight: 600;
   font-size: 1.25rem;
@@ -100,6 +100,6 @@
 
 .row textarea { resize: none; width: 75%; min-height: 280px; border-radius: 20px; }
 .contact-input::placeholder { font-weight: 400; }
-.contact-input:focus { background: #eaeaea; color: #111113; }
+.contact-input:focus { background: var(--light-three);  color: #111113; }
 .contact-input .btn { margin-top: 0.6rem; }
 /* End Contact */
