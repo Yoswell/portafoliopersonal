@@ -51,13 +51,11 @@
   margin: 5px;
 }
 
-.icon { width: 100%; border-radius: 10px; visibility: hidden; display: none; }
+.icon { width: 100%; border-radius: 10px; }
 .cardPortafolio h3 { color: var(--light-one); margin-top: -50px; }
 .btns1:hover { background-color: #706CE7; color: #000; }
 .btns2:hover { background-color: #F5D755; color: #000; }
 .btns3:hover { background-color: #F77D8C; color: #000; }
 .card-wrap:hover .cardPortafolio { transform: translateY(-10px); }
-.card-wrap:hover .cardPortafolio .iconS { display: none; }
-.card-wrap:hover .cardPortafolio .icon { display: block; }
-.card-wrap:hover .cardPortafolio .icon { visibility: visible; }
+
 /* End Portfolio */
