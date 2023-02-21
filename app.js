@@ -8,11 +8,6 @@ const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
 
-const dark = document.getElementById('darkMode');
-const body = document.getElementById('body');
-const sobremi = document.getElementById('about');
-const skills = document.getElementById('skills');
-
 footer_input.addEventListener("focus", () => {
   footer_input.classList.add("focus");
 });
@@ -37,4 +32,3 @@ hamburger_menu.addEventListener("click", () => {
 });
 
 links.forEach((link) => link.addEventListener("click", () => closeMenu()));
-
