@@ -134,7 +134,10 @@ nav .container {
 
 .bar:before { transform: translateY(-9px); }
 .bar:after { transform: translateY(9px); }
-nav.open .links { transform: translateX(0%); background-color: #17171a; }
+header nav.open .links { 
+  transform: translateX(0%); 
+  background-color: #17171a; 
+}
 
 .header-title { font-size: 3.3rem; color: var(--white-there); font-family: 'Fredericka the Great', cursive; }
 .header-content .text { margin: 1.5rem 0; }
