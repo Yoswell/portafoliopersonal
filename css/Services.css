@@ -24,6 +24,7 @@
   transition: 0.3s;
   color: #a7a7a8;
   border-radius: 8px;
+  transition: 500ms;
 }
 
 .card-wrap:hover .card:after { height: 8px; }
