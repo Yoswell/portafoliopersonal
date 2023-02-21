@@ -38,6 +38,7 @@
   transition: 0.3s;
   border-radius: 20px;
   border: 10px solid #24252a;
+  transition: 500ms;
 }
 
 .cardPortafolio .btn {
@@ -57,5 +58,4 @@
 .btns2:hover { background-color: #F5D755; color: #000; }
 .btns3:hover { background-color: #F77D8C; color: #000; }
 .card-wrap:hover .cardPortafolio { transform: translateY(-10px); }
-
 /* End Portfolio */
