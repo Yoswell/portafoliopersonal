@@ -23,19 +23,19 @@
 <body id="body">
   <main>
     <header id="header">
-      <nav>
+      <nav id="nav">
         <div class="container">
           <div class="links">
             <ul>
-              <li><a href="#header">Inicio</a></li>
-              <li><a href="#services">Servicios</a></li>
-              <li><a href="#about">Sobremi</a></li>
-              <li><a href="#servicesPortafolio">Portfolio</a></li>
-              <li><a href="#skills">SKILLS</a></li>
-              <li><a href="#contact" class="active">Contacto</a></li>
+              <li><a href="#header" onclick="seleccionar()">Inicio</a></li>
+              <li><a href="#services" onclick="seleccionar()">Servicios</a></li>
+              <li><a href="#about" onclick="seleccionar()">Sobremi</a></li>
+              <li><a href="#servicesPortafolio" onclick="seleccionar()">Portfolio</a></li>
+              <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+              <li><a href="#contact" class="active" onclick="seleccionar()">Contacto</a></li>
             </ul>
           </div>
-          <div class="hamburger-menu">
+          <div class="hamburger-menu" onclick="mostrarOcultarMenu()">
             <div class="bar"></div>
           </div>
         </div>
@@ -91,9 +91,6 @@
                 <h3 class="tit">Diseño Web</h3>
                 <p class="textSer">Te ofrezco mi servicio como diseñador web, ux/ui o diseño grafico</p>
               </div>
-              <div class="contBarras">
-                <div class="barra1 C"></div><div class="barra1 D"></div><div class="barra1 C"></div>
-              </div>
             </div>
           </div>
 
@@ -106,9 +103,6 @@
                 <h3 class="tit">Desarrollador Web</h3>
                 <p class="textSer">Te ofrezco mi servicio como desarrollador web en lenguajes como HTML, CSS y Javascript</p>
               </div>
-              <div class="contBarras">
-                <div class="barra2 C"></div><div class="barra2 D"></div><div class="barra2 C"></div>
-              </div>
             </div>
           </div>
 
@@ -120,9 +114,6 @@
                 </div>
                 <h3 class="tit">Desarrollador de videojuegos</h3>
                 <p class="textSer">Te ofrezco mi servicio como desarrollador de videojuegos, basicos</p>
-              </div>
-              <div class="contBarras">
-                <div class="barra3 C"></div><div class="barra3 D"></div><div class="barra3 C"></div>
               </div>
             </div>
           </div>
@@ -340,7 +331,7 @@
           <div class="card-wrap">
             <div class="cardPortafolio" id="cardPortafolio" data-card="App">
               <div class="card-contentPortafolio z-index">
-                <img src="img/barberiaLoro.png" class="icon" alt="" />
+                <img src="img/Barberia.png" class="icon" alt="" />
               </div>
               <h3>Desarrollo Web (Barberia) hecha con Html, css y Javascript</h3>
               <a href="https://yoswell.github.io/barberia-loro/" class="btn btns1">Demo</a>
