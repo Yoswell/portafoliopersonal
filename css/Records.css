@@ -21,6 +21,7 @@
   background-color: #24252a;
   border-radius: 15px;
   overflow: hidden;
+  transition: 500ms;
 }
 
 .contImage { padding-bottom: 30px; }
