@@ -202,7 +202,6 @@
   .records .container .wrap .record-circle h4 {
     position: absolute;
     top: 110px;
-    padding-left: 0.5rem;
     font-size: 10px;
   }
 
@@ -226,11 +225,7 @@
     height: 50px;
     width: 180px;
   }
-
-  .hamburger-menu {
-    display: flex;
-  }
-
+  
   .footer .footer-newstletter { display: none; }
 
   header nav {
@@ -262,6 +257,7 @@
     padding: 0;
   }
 
+  
   .hamburger-menu { display: flex; }
   .header-content { margin-top: 1rem; }
   .header-title { font-size: 2.3rem; }
@@ -421,7 +417,7 @@
   }
 
   .contact-info .text { text-align: center; }
-  .column-2 img { width: 450px; }
+  .column-2 img { width: 400px; }
   .column-1 p { text-align: justify; }
   .records { margin-top: -2rem; }
 
@@ -491,6 +487,7 @@
   .col h2 { font-size: 1rem; }
   .servicesPortafolio { width: 100%; }
   .contact-info { width: 230px; }
+  .column-2 img { width: 350px; }
 
   .contact .container {
     display: flex;
