@@ -62,6 +62,7 @@
 .cardHabilidad:hover .progreso9 { width: 32%; background-color: var(--verdin); }
 .cardHabilidad:hover .progreso10 { width: 42%; background-color: var(--verdin); }
 .cardHabilidad:hover .progreso11 { width: 30%; background-color: var(--verdin); }
+.cardHabilidad:hover .progreso12 { width: 10%; background-color: var(--verdin); }
 
 .records {
   position: relative;
@@ -88,6 +89,7 @@
   margin: 0 auto;
   border: 4px solid var(--verdin);
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   color: var(--light-three);
@@ -122,7 +124,8 @@
 .progreso8,
 .progreso9,
 .progreso10,
-.progreso11 {
+.progreso11,
+.progreso12 {
   height: 10px;
   background-color: #17171a;
   margin: -1px;
@@ -141,6 +144,7 @@
 .progreso9 { width: 2%; }
 .progreso10 { width: 2%; }
 .progreso11 { width: 2%; }
+.progreso12 { width: 2% ;}
 
 .barraprogreso a {
   display: flex;
