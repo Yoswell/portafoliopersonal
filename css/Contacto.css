@@ -1,5 +1,5 @@
 /* Contact */
-.contact { position: relative; width: 100%; padding-top: 120px;}
+.contact { position: relative; width: 100%; padding-top: 120px; }
 .contact:before,
 .contact:after {
   content: "";
@@ -17,12 +17,15 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
   background-color: #17171a;
   width: 100%;
   border-radius: 45px;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.contact .text {
+  padding: 20px;
 }
 
 .contact-info .title:after { left: 0; transform: initial; }
