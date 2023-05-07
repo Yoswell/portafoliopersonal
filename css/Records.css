@@ -57,7 +57,7 @@
 .cardHabilidad:hover .progreso4 { width: 26%; background-color: var(--verdin); }
 .cardHabilidad:hover .progreso5 { width: 22%; background-color: var(--verdin); }
 .cardHabilidad:hover .progreso6 { width: 42%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso7 { width: 50%; background-color: var(--verdin); }
+.cardHabilidad:hover .progreso7 { width: 20%; background-color: var(--verdin); }
 .cardHabilidad:hover .progreso8 { width: 12%; background-color: var(--verdin); }
 .cardHabilidad:hover .progreso9 { width: 32%; background-color: var(--verdin); }
 .cardHabilidad:hover .progreso10 { width: 42%; background-color: var(--verdin); }
