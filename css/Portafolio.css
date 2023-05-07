@@ -1,8 +1,3 @@
-/* Portfolio */
-.servicesPortafolio {
-  margin-top: 1px;
-}
-
 .cardsPortafolio {
   display: flex;
   justify-content: space-around;
@@ -10,8 +5,9 @@
   width: 100%;
 }
 
-.card-wrap {
+.cardsPortafolio .card-wrap {
   position: relative;
+  margin: 0;
 }
 
 .card-contentPortafolio {
@@ -19,7 +15,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
-  height: 360px;
+  height: 360px; margin: 0;
 }
 
 .cardPortafolio {
@@ -37,8 +33,8 @@
   overflow: hidden;
   transition: 0.3s;
   border-radius: 20px;
+  padding: 0 30px;
   border: 10px solid #24252a;
-  transition: 500ms;
 }
 
 .cardPortafolio .btn {
@@ -52,7 +48,7 @@
   margin: 5px;
 }
 
-.icon { width: 100%; border-radius: 10px; }
+.icon { border-radius: 10px; }
 .cardPortafolio h3 { color: var(--light-one); margin-top: -50px; }
 .btns1:hover { background-color: #706CE7; color: #000; }
 .btns2:hover { background-color: #F5D755; color: #000; }
