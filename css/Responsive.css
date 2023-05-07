@@ -100,7 +100,6 @@
   }
 
   .card:before { font-size: 5rem; }
-  .card-wrap { margin: 1rem 0.6rem; }
   .points-sq { width: 150px; }
   .grid { margin: 0.8rem 0; }
 
@@ -189,7 +188,6 @@
   .followme h3 { font-size: 1.05rem; }
   .followme .footer-line { margin: 0 0.8rem; }
   .social-media a { font-size: 1.05rem; }
-
   .column-1 .header-title { font-size: 2.5rem; }
   .footer .wave { margin-top: -70px; }
   .records { margin-top: -2rem; }
@@ -205,8 +203,6 @@
     font-size: 10px;
   }
 
-  .contact .contact-info h2 { padding-left: 20px; }
-  .contact .contact-info .text { padding-left: 20px; }
   .skills .fila .col .barra-skill { width: 100%; }
   #services { bottom: 10px; }
   #sobremi { margin-top: -70px; }
@@ -257,7 +253,6 @@
     padding: 0;
   }
 
-  
   .hamburger-menu { display: flex; }
   .header-content { margin-top: 1rem; }
   .header-title { font-size: 2.3rem; }
@@ -382,21 +377,33 @@
     justify-content: center;
   }
 
+  .card-wrap .cardPortafolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    padding: 30px 10px;
+    margin: 0;
+  }
+
+  .cardPortafolio .card-contentPortafolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .cardPortafolio .card-contentPortafolio img { width: 100%; }
+  .cardPortafolio h3 { margin-top: 10px !important; }
+
   .column-1 .header-title { font-size: 2rem; }
   .sobremi { position: relative; text-align: justify; }
   #services { bottom: 10px; }
   #sobremi { margin-top: -10px; bottom: 40px; }
   .sobremi .fila .col h3 { font-size: 1.8em; }
-  
-  #intereses {
-    display: inline-block;
-    flex-wrap: wrap;
-    position: relative;
-    top: 60px;
-    padding-bottom: 40px;
-    width: 100%;
-  }
-
   .title { font-size: 1.8rem; }
   .text { font-size: 0.92rem; }
   .records .container { grid-template-columns: 1fr; }
@@ -406,8 +413,6 @@
   .review { padding: 1.5rem 1rem; }
   .review-text { font-size: 0.9rem; }
   .review-nav { bottom: 1.5rem; font-size: 1.3rem; }
-  .swiper-button-next { right: 1.3rem; }
-  .swiper-button-prev { right: 3rem; }
 
   .contact-info {
     display: flex;
@@ -460,16 +465,18 @@
   }
 }
 
-@media (max-width: 400px) {
-  .container { width: 100% }
-  nav .hamburger-menu { display: flex; margin-left: 40%; }
+@media (max-width: 390px) {
+  .container {
+    width: 100%;
+  }
 
   .card-wrap .cardPortafolio {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 310px;
+    width: 330px;
     height: 400px;
+    padding: 10px 10px;
   }
 
   .cardPortafolio .card-contentPortafolio {
@@ -481,9 +488,9 @@
     margin-top: -70px;
   }
 
-  .cardPortafolio .card-contentPortafolio img { width: 320px; }
-  .cardPortafolio h3 { font-size: 0.8rem; }
-  .hamburger-menu { margin-left: 385px; }
+  .cardPortafolio .card-contentPortafolio img { width: 32px; }
+  .cardPortafolio h3 { font-size: 0.8rem; margin-top: -90px !important;}
+  .cardPortafolio a { font-size: 0.8rem; margin-top: -30px !important;}
   .col h2 { font-size: 1rem; }
   .servicesPortafolio { width: 100%; }
   .contact-info { width: 230px; }
@@ -518,37 +525,16 @@
 }
 
 @media (max-width: 390px) {
-  .contenedor-interesesFormacion { width: 200px; }
   .column-1 .contButtonsHeader .header-title { font-size: 1.5rem; }
   .contButtonsHeader .social-medias a { font-size: 1.5rem; }
-  .services .cards .card-wrap { width: 300px; }
-  .services .cards .card-wrap .card .card-content .tit { padding: 50px; }
-
-  .sobremi .fila .col .contenedor-intereses .interes {
-    display: grid;
-    width: 100px;
-    height: 100px;
-    grid-template-columns: 1fr 1fr;
-  }
-
+  .services .cards .card-wrap { width: 300px; transition: 500ms; }
+  .services .cards .card-wrap .card .card-content .tit { padding: 20px 50px 0 50px; transition: 500ms; }
+  .sobremi .cards .card-wrap { width: 300px; transition: 500ms;}
+  .sobremi .cards .card-wrap .card .card-content .tit { padding: 50px; }
   .contenedor-habilidades .cardHabilidad { width: 160px; margin: 5px; }
   .contenedor-habilidades .cardHabilidad img { width: 80px; height: 80px; }
   .cardHabilidad:hover img { width: 90px; height: 90px; }
-  .contenedor-interesesFormacion { width: 100%; }
 
-  .contenedor-interesesFormacion .cards .card {
-    width: 200px;
-    height: 200px;
-    overflow: visible;
-  }
-
-  .contenedor-interesesFormacion .cards .card-wrap .card .card-content {
-    overflow: visible;
-    width: 250px;
-    height: 200px;
-  }
-
-  .contenedor-interesesFormacion .cards .card-wrap .card .contIcons img { width: 100px; border-radius: 10px; }
   .column-2 img { width: 300px; }
   .contact-box { padding: 0; }
   .contact-form { width: 100%; margin-top: -100px; }
