@@ -192,6 +192,10 @@ img {
   margin: 20px;
 }
 
+.visitas {
+  width: 150px;
+}
+
 .btn:hover {
   background-color: #ffffff;
 }
