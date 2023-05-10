@@ -23,12 +23,7 @@
   position: relative;
   width: 100%;
   max-width: 390px;
-  min-height: 450px;
-  background-color: #17171a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  min-height: 400px;
   text-align: center;
   padding: 3rem 2rem;
   overflow: hidden;
@@ -40,7 +35,7 @@
 }
 
 .sobremi .card .textSer {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .sobremi .card .contIcons img {
@@ -48,6 +43,7 @@
   border-radius: 10px;
   filter: grayscale(100%);
   transition: 500ms;
+  margin-top: 100px;
 }
 .sobremi .card-wrap .card .contIcons img:hover {
   filter: grayscale(0%);
