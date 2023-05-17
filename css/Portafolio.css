@@ -13,7 +13,8 @@
   justify-items: center;
   justify-content: space-evenly;
   width: 100%;
-  grid-gap: 20px;
+  grid-gap: 5px;
+  padding: 0 15px;
 }
 
 .cardsPortafolio .card-wrap {
@@ -22,7 +23,7 @@
 }
 
 .cardPortafolio {
-  width: 100%;
+  min-width: 336px;
   height: 100%;
   background-color: #17171a;
   display: flex;
@@ -37,7 +38,7 @@
 }
 
 .cardPortafolio .btn {
-  background-color: #171717;
+  background-color: #17171a;
   color: rgb(255, 255, 255);
   height: 30px;
   width: 50%;
