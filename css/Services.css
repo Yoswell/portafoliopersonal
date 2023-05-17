@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
+  align-items: center;
   justify-content: center;
   grid-gap: 5px;
 }
@@ -77,5 +78,10 @@
 @media only screen and (max-width: 700px) {
   .cards {
     grid-template-columns: 1fr;
+    align-items: center !important;
+    justify-content: center !important;
+    grid-gap: 10px 0;
+    padding: 0;
+    margin: 0;
   }
 }
