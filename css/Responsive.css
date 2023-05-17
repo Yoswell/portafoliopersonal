@@ -83,12 +83,6 @@
   .header-title { font-size: 2.6rem; }
   .header-content .text { margin: 1.1rem 0; }
 
-  .card {
-    min-height: 390px;
-    max-width: 290px;
-    padding: 2.2rem 1.5rem;
-  }
-
   .icon {
     width: 65px;
     margin-bottom: 0.8rem;
@@ -336,16 +330,6 @@
 }
 
 @media (max-width: 750px) {
-  #habilidades .contenedor-habilidades {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .contenedor-habilidades .cardHabilidad {
-    width: 150px;
-    height: 200px;
-  }
-
   .footer .grid-4 {
     display: flex;
     align-items: center;
@@ -366,6 +350,11 @@
 }
 
 @media (max-width: 560px) {
+  .contenedor-habilidades .cardHabilidad {
+    width: 150px;
+    height: 200px;
+  }
+
   .container { padding: 0 2rem; }
   .container.grid-2 { margin-top: -50px; }
 
@@ -376,28 +365,6 @@
     align-items: center;
     justify-content: center;
   }
-
-  .card-wrap .cardPortafolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-    padding: 30px 10px;
-    margin: 0;
-  }
-
-  .cardPortafolio .card-contentPortafolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .cardPortafolio .card-contentPortafolio img { width: 100%; }
-  .cardPortafolio h3 { margin-top: 10px !important; }
 
   .column-1 .header-title { font-size: 2rem; }
   .sobremi { position: relative; text-align: justify; }
@@ -470,27 +437,6 @@
     width: 100%;
   }
 
-  .card-wrap .cardPortafolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 330px;
-    height: 400px;
-    padding: 10px 10px;
-  }
-
-  .cardPortafolio .card-contentPortafolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    width: 295px;
-    margin-top: -70px;
-  }
-
-  .cardPortafolio .card-contentPortafolio img { width: 32px; }
-  .cardPortafolio h3 { font-size: 0.8rem; margin-top: -90px !important;}
-  .cardPortafolio a { font-size: 0.8rem; margin-top: -30px !important;}
   .col h2 { font-size: 1rem; }
   .servicesPortafolio { width: 100%; }
   .contact-info { width: 230px; }
@@ -508,7 +454,6 @@
   .bottom-footer .followme-wrap .followme h3 { font-size: 1rem; }
   .bottom-footer .followme-wrap .followme i { display: flex; font-size: 0.8rem; }
   .back-btn-wrap .back-btn { margin-top: 50px; width: 50px; height: 50px; }
-  .cardPortafolio .card-contentPortafolio .icon { width: 100%; margin-top: 30px; }
   .grid-4 .footer-links a { font-size: 0.8rem; }
 
   .footer .container .followme-wrap .social-media {
