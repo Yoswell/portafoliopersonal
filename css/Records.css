@@ -8,7 +8,10 @@
   justify-content: center;
 }
 
-.contenedor-habilidades { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; }
+.contenedor-habilidades { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
 
 .cardHabilidad {
   width: 200px;
@@ -21,7 +24,6 @@
   background-color: #24252a;
   border-radius: 15px;
   overflow: hidden;
-  transition: 500ms;
 }
 
 .contImage { padding-bottom: 30px; }
@@ -160,3 +162,10 @@
   font-family: 'Silkscreen', cursive;
 }
 /* End Records */
+
+@media only screen and (max-width: 730px) {
+  #habilidades .contenedor-habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
