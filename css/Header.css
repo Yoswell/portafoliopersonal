@@ -139,7 +139,7 @@ header nav.open .links {
   background-color: #17171a; 
 }
 
-.header-title { font-size: 3.3rem; color: var(--white-there); font-family: 'Fredericka the Great', cursive; }
+.header-title { font-size: 3.3rem; color: var(--white-there); }
 .header-content .text { margin: 1.5rem 0; }
 
 .column-1 .contButtonsHeader {
