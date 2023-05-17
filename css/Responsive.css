@@ -472,9 +472,7 @@
 @media (max-width: 390px) {
   .column-1 .contButtonsHeader .header-title { font-size: 1.5rem; }
   .contButtonsHeader .social-medias a { font-size: 1.5rem; }
-  .services .cards .card-wrap { width: 300px; transition: 500ms; }
   .services .cards .card-wrap .card .card-content .tit { padding: 20px 50px 0 50px; transition: 500ms; }
-  .sobremi .cards .card-wrap { width: 300px; transition: 500ms;}
   .sobremi .cards .card-wrap .card .card-content .tit { padding: 50px; }
   .contenedor-habilidades .cardHabilidad { width: 160px; margin: 5px; }
   .contenedor-habilidades .cardHabilidad img { width: 80px; height: 80px; }
