@@ -3,16 +3,14 @@
   margin-top: 100px;
   background-color: #17171a;
   color: #ebebee;
-  padding: 100px 30px;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sobremi .contenido-seccion {
   width: 100%;
-  margin: auto;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .sobremi .section-header p { text-align: justify; }
@@ -20,17 +18,6 @@
 .sobremi .section-header .text { display: flex; align-items: center; text-align: center; justify-content: center; }
 
 .sobremi .card {
-  position: relative;
-  width: 100%;
-  max-width: 390px;
-  min-height: 400px;
-  text-align: center;
-  padding: 3rem 2rem;
-  overflow: hidden;
-  transition: 0.3s;
-  color: #a7a7a8;
-  transition: 500ms;
-  border-radius: 20px;
   background-color: #24252a;
 }
 
