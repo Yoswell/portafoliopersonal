@@ -1,8 +1,19 @@
-.cardsPortafolio {
+.servicesPortafolio {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+}
+
+.porta {
+  padding: 0;
+}
+
+.cardsPortafolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  justify-content: space-evenly;
   width: 100%;
+  grid-gap: 20px;
 }
 
 .cardsPortafolio .card-wrap {
@@ -10,48 +21,52 @@
   margin: 0;
 }
 
-.card-contentPortafolio {
-  display: block;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 20px;
-  height: 360px; margin: 0;
-}
-
 .cardPortafolio {
-  position: relative;
   width: 100%;
-  max-width: 440px;
-  height: 500px;
+  height: 100%;
   background-color: #17171a;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1rem 1rem;
   flex-wrap: wrap;
   overflow: hidden;
-  transition: 0.3s;
-  border-radius: 20px;
-  padding: 0 30px;
-  border: 10px solid #24252a;
+  border-radius: 10px;
+  border: 2px solid #3f3f3f;
+  transition: 500ms;
 }
 
 .cardPortafolio .btn {
-  background-color: #232427;
+  background-color: #171717;
   color: rgb(255, 255, 255);
   height: 30px;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px;
 }
 
-.icon { border-radius: 10px; }
-.cardPortafolio h3 { color: var(--light-one); margin-top: -50px; }
+.icon { 
+  border-radius: 10px 10px 0 0; 
+  width: 100%;
+  border-bottom: 2px solid #3f3f3f;
+}
+
+.cardPortafolio h3 { color: #b4b4b4; padding:  0 10px;}
 .btns1:hover { background-color: #706CE7; color: #000; }
 .btns2:hover { background-color: #F5D755; color: #000; }
 .btns3:hover { background-color: #F77D8C; color: #000; }
-.card-wrap:hover .cardPortafolio { transform: translateY(-10px); }
+.card-wrap:hover .cardPortafolio { transform: translateY(-5px); }
+
+@media only screen and (max-width: 1100px) {
+  .cardsPortafolio {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .cardsPortafolio {
+    grid-template-columns: 1fr;
+  }
+}
 /* End Portfolio */
