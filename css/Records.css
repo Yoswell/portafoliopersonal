@@ -14,16 +14,17 @@
 }
 
 .cardHabilidad {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 20px;
+  margin: 5px;
   background-color: #24252a;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
+  border: 6px double #17171a;
 }
 
 .contImage { padding-bottom: 30px; }
@@ -89,7 +90,7 @@
   height: 180px;
   border-radius: 50%;
   margin: 0 auto;
-  border: 4px solid var(--verdin);
+  border: 7px double var(--verdin);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -101,7 +102,7 @@
   background-color: var(--light-thoro);
   color: var(--light-three);
   box-shadow: 0 0 0 15px rgba(248, 247, 247, 0.938);
-  border: 4px solid var(--light-thoro);
+  border: 7px double #fff;
 }
 
 .number { font-weight: 400; font-size: 2.35rem; font-family: 'Silkscreen', cursive; }
@@ -135,29 +136,29 @@
   border: none;
 }
 
-.progreso1 { width: 2%; }
-.progreso2 { width: 2%; }
-.progreso3 { width: 2%; }
-.progreso4 { width: 2%; }
-.progreso5 { width: 2%; }
-.progreso6 { width: 2%; }
-.progreso7 { width: 2%; }
-.progreso8 { width: 2%; }
-.progreso9 { width: 2%; }
-.progreso10 { width: 2%; }
-.progreso11 { width: 2%; }
-.progreso12 { width: 2% ;}
+.progreso1 { width: 1%; }
+.progreso2 { width: 1%; }
+.progreso3 { width: 1%; }
+.progreso4 { width: 1%; }
+.progreso5 { width: 1%; }
+.progreso6 { width: 1%; }
+.progreso7 { width: 1%; }
+.progreso8 { width: 1%; }
+.progreso9 { width: 1%; }
+.progreso10 { width: 1%; }
+.progreso11 { width: 1%; }
+.progreso12 { width: 1% ;}
 
 .barraprogreso a {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #17171a;
-  border: none;
+  border: 6px double #24252a;
   color: #17171a;
   font-weight: bold;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   font-family: 'Silkscreen', cursive;
 }
@@ -167,5 +168,21 @@
   #habilidades .contenedor-habilidades {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .cardHabilidad {
+    transition: 500ms;
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cardHabilidad {
+    transition: 500ms;
+    width: 200px;
+    height: 200px;
   }
 }
