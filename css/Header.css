@@ -11,8 +11,9 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 50;
-  margin-top: -90px;
-  background-color: #24252a;
+  top: 0;
+  background-color: #17171a;
+  border-bottom: 1px solid #24252a;
 }
 
 ::-webkit-scrollbar {
@@ -62,9 +63,9 @@ nav .container {
   display: inline-block;
   padding: 1rem 1.9rem;
   color: var(--white-there);
-  font-size: 1.05rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  font-weight: 550;
+  font-weight: 900;
   line-height: 1;
 }
 
@@ -81,14 +82,14 @@ nav .container {
 .links a.active {
   cursor: pointer;
   border-radius: 30px;
-  border: none;
+  border: 6px double #17171a;
   background-color: var(--verdin);
   color: #17171a;
   display: block;
   width: 150px;
   height: 45px;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 900;
   position: relative;
   z-index: 10;
   text-transform: uppercase;
@@ -167,6 +168,7 @@ header nav.open .links {
   border: 3px solid #17171a;
   background-color: #24252a;
   border-radius: 50%;
+  border: 6px double #17171a;
 }
 
 .social-medias a:nth-child(1):hover { color: #706CE7; }
@@ -183,6 +185,10 @@ header nav.open .links {
   border: none;
   border-radius: 50%;
   transition: 0.3s;
+}
+
+.principal {
+  border: 6px double #17171a !important;
 }
 
 .btn1:hover { background-color: #706CE7; }
