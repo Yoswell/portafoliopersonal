@@ -351,8 +351,9 @@
 
 @media (max-width: 560px) {
   .contenedor-habilidades .cardHabilidad {
-    width: 150px;
+    width: 200px;
     height: 200px;
+    margin: 5px;
   }
 
   .container { padding: 0 2rem; }
@@ -432,7 +433,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   .container {
     width: 100%;
   }
@@ -469,7 +470,7 @@
   .contact-box .contact-form { display: flex; }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   .column-1 .contButtonsHeader .header-title { font-size: 1.5rem; }
   .contButtonsHeader .social-medias a { font-size: 1.5rem; }
   .services .cards .card-wrap .card .card-content .tit { padding: 20px 50px 0 50px; transition: 500ms; }
