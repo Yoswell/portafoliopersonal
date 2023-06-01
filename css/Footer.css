@@ -117,7 +117,7 @@
   justify-content: center;
   color: #7b7b7b;
   font-size: 1.3rem;
-  border: 3px solid #17171a;
+  border: 6px double #17171a;
   transition: 0.3s;
   width: 55px;
   height: 55px;
