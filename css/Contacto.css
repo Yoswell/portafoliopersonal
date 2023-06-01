@@ -39,12 +39,18 @@
 .contact-icon {
   min-width: 67px;
   height: 67px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--verdin);
   border-radius: 50%;
   color: var(--light-thoro);
-  text-align: center;
   font-size: 1.4rem;
+  border: 6px double #17171a;
+}
+
+.submit {
+  border: 6px double #17171a !important;
 }
 
 .contact-icon i { line-height: 67px; }
