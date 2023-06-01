@@ -32,3 +32,59 @@ hamburger_menu.addEventListener("click", () => {
 });
 
 links.forEach((link) => link.addEventListener("click", () => closeMenu()));
+
+const plus = document.getElementById('cplusplus');
+const htmlCss = document.getElementById('htmlCss');
+const react = document.getElementById('react');
+const java = document.getElementById('java');
+const csharp = document.getElementById('csharp');
+const openplus = document.getElementById('openCplusplus');
+const openreact = document.getElementById('openReact');
+const openJava = document.getElementById('openJava');
+const opencSharp = document.getElementById('openCsharp');
+const openHtml = document.getElementById('openHtml');
+
+openplus.addEventListener('click', (e) => {
+  e.preventDefault();
+  htmlCss.style.display = "none";
+  csharp.style.display = "none";
+  java.style.display = "none";
+  react.style.display = "none";
+  plus.style.display = "grid";
+});
+
+openreact.addEventListener('click', (e) => {
+  e.preventDefault();
+  htmlCss.style.display = "none";
+  plus.style.display = "none";
+  csharp.style.display = "none";
+  java.style.display = "none";
+  react.style.display = "grid";
+});
+
+openJava.addEventListener('click', (e) => {
+  e.preventDefault();
+  htmlCss.style.display = "none";
+  plus.style.display = "none";
+  react.style.display = "none";
+  csharp.style.display = "none";
+  java.style.display = "grid";
+});
+
+opencSharp.addEventListener('click', (e) => {
+  e.preventDefault();
+  htmlCss.style.display = "none";
+  plus.style.display = "none";
+  react.style.display = "none";
+  java.style.display = "none";
+  csharp.style.display = "grid";
+});
+
+openHtml.addEventListener('click', (e) => {
+  e.preventDefault();
+  plus.style.display = "none";
+  react.style.display = "none";
+  java.style.display = "none";
+  csharp.style.display = "none";
+  htmlCss.style.display = "grid";
+});
