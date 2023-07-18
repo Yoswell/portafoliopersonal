@@ -88,6 +88,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .icon { 
@@ -124,7 +125,7 @@
   justify-content: flex-start;
 }
 
-.cardPortafolio h3 { color: #b4b4b4; }
+.cardPortafolio h3 { color: #b4b4b4; padding-bottom: 30px; }
 .btns1:hover { background-color: #706CE7; color: #000; }
 .btns2:hover { background-color: #F5D755; color: #000; }
 .btns3:hover { background-color: #F77D8C; color: #000; }
