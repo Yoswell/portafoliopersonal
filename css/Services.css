@@ -102,3 +102,32 @@
     margin: 0;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card p {
+    padding: 0 5px;
+  }
+
+  .services .card-content .contIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #24252a;
+  }
+  
+  .icons { width: 50px; }
+}
