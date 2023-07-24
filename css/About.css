@@ -37,4 +37,13 @@
 .sobremi .card-wrap .card .contIcons img:hover {
   filter: grayscale(0%);
 }
+
+@media only screen and (max-width: 500px) {
+  .sobremi .card .textSer {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+  
+  .sobremi .card .contIcons img { width: 100px; margin-top: 0; }
+}
 /* Sobre mi */
