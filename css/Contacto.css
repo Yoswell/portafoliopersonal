@@ -1,5 +1,5 @@
 /* Contact */
-.contact { position: relative; width: 100%; padding-top: 120px; }
+.contact { position: relative; width: 100%; padding-top: 120px; padding-bottom: 120px; }
 .contact:before,
 .contact:after {
   content: "";
@@ -28,29 +28,9 @@
   padding: 20px;
 }
 
-.contact-info .title:after { left: 0; transform: initial; }
-.information-wrap { margin-top: 2rem; }
-.information { display: flex; align-items: center; }
-.info1:hover { background-color: #706CE7; }
-.info2:hover { background-color: #F5D755; }
-.info3:hover { background-color: #F77D8C; }
-.information:not(:last-child) { margin-bottom: 1.3rem; }
-
-.contact-icon {
-  min-width: 67px;
-  height: 67px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--verdin);
-  border-radius: 50%;
-  color: var(--light-thoro);
-  font-size: 1.4rem;
-  border: 6px double #17171a;
-}
-
 .submit {
   border: 6px double #17171a !important;
+  border-radius: 10px;
 }
 
 .contact-icon i { line-height: 67px; }
@@ -58,18 +38,7 @@
 .info-text { display: inline-block; padding-left: 10px; color: var(--light-three); }
 .contact-form .title:after { display: none; }
 
-.contact-info{
-  width: 500px;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.contact-info .title::after { display: none; }
-.information-wrap { width: 75%; height: 600px; }
-.contact-form { display: flex; flex-direction: column; width: 500px; height: 800px; }
+.contact-form { display: flex; flex-direction: column; width: 100%; height: 100%; padding-top: 80px; padding-bottom: 40px; }
 
 .contact-form .row {
   width: 100%;
@@ -101,13 +70,13 @@
   outline: none;
   background: #24252a;
   color: var(--light-three); ;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 1.25rem;
   transition: 0.3s;
 }
 
-.row textarea { resize: none; width: 75%; min-height: 280px; border-radius: 20px; }
+.row textarea { resize: none; width: 75%; min-height: 280px; border-radius: 10px; }
 .contact-input::placeholder { font-weight: 400; }
 .contact-input:focus { background: var(--light-three);  color: #111113; }
 .contact-input .btn { margin-top: 0.6rem; }
