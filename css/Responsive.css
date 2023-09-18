@@ -1,4 +1,9 @@
 /* Responsive */
+@media screen and (max-width: 2000px) {
+  .hamburger-menu { display: none; }
+}
+
+
 @media screen and (max-width: 1920px) {
   .hamburger-menu { display: none; }
 }
@@ -74,12 +79,6 @@
     padding: 0.65rem 0.7rem;
   }
 
-  .links a.active {
-    font-size: 0.7rem;
-    padding: 0.7rem 1.7rem;
-    margin-left: 0.6rem;
-  }
-
   .header-title { font-size: 2.6rem; }
   .header-content .text { margin: 1.1rem 0; }
 
@@ -115,24 +114,10 @@
     font-size: 0.7rem;
   }
 
-  .about .text { margin-top: 0.7rem; }
   .skills { margin: 0.9rem 0 1.7rem 0; }
   .skill-title { font-size: 1rem; }
   .skill-bar { height: 6px; }
 
-  .about .column-1:before {
-    font-size: 6rem;
-    top: 13px;
-  }
-
-  .record-circle {
-    width: 150px;
-    height: 150px;
-    border-width: 3px;
-  }
-
-  .record-circle .number { font-size: 1.8rem; }
-  .record-circle .sub-title { font-size: 0.9rem; }
   .btn.small { padding: 6px 6px; }
 
   .rate {
@@ -147,21 +132,8 @@
   .quote { font-size: 6.5rem; }
   .review-nav { font-size: 1.55rem; }
 
-  .contact {
-    padding: 9rem 0 6rem 0;
-  }
-
   .information-wrap { margin-top: 1.2rem; }
 
-  .contact-icon {
-    min-width: 50px;
-    height: 50px;
-    font-size: 1rem;
-    margin-right: 0.8rem;
-  }
-
-  .contact-icon i { line-height: 50px; }
-  .info-text { font-size: 1.05rem; }
   .hireme { padding: 8rem 0; }
   .footer { padding: 4rem 0; }
   .footer-links a { font-size: 1rem; }
@@ -184,22 +156,9 @@
   .social-media a { font-size: 1.05rem; }
   .column-1 .header-title { font-size: 2.5rem; }
   .footer .wave { margin-top: -70px; }
-  .records { margin-top: -2rem; }
-
-  .records .container .wrap .record-circle {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .records .container .wrap .record-circle h4 {
-    position: absolute;
-    top: 110px;
-    font-size: 10px;
-  }
 
   .skills .fila .col .barra-skill { width: 100%; }
   #services { bottom: 10px; }
-  #sobremi { margin-top: -70px; }
   #skills { margin-top: 40px; }
 
   .links button.active {
@@ -207,7 +166,6 @@
     width: 180px;
   }
 
-  .contact-form { margin-top: -100px; }
 }
 
 @media (max-width: 1000px) {
@@ -248,6 +206,17 @@
   }
 
   .hamburger-menu { display: flex; }
+  .bar::before,
+  .bar::after {
+    content: "";
+    position: absolute;
+    width: 2.1rem;
+    height: 2px;
+    border-radius: 3px;
+    background-color: var(--verdin);
+    transition: 3s;
+    margin-top: 0px !important;
+  }
   .header-content { margin-top: 1rem; }
   .header-title { font-size: 2.3rem; }
 
@@ -368,13 +337,9 @@
   }
 
   .column-1 .header-title { font-size: 2rem; }
-  .sobremi { position: relative; text-align: justify; }
   #services { bottom: 10px; }
-  #sobremi { margin-top: -10px; bottom: 40px; }
-  .sobremi .fila .col h3 { font-size: 1.8em; }
   .title { font-size: 1.8rem; }
   .text { font-size: 0.92rem; }
-  .records .container { grid-template-columns: 1fr; }
   .skills .fila .col { width: 10%; }
   .skills .fila .col .barra-skill { width: 100%; }
   .testi-content { margin-top: 1rem; }
@@ -382,28 +347,8 @@
   .review-text { font-size: 0.9rem; }
   .review-nav { bottom: 1.5rem; font-size: 1.3rem; }
 
-  .contact-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .contact-info .text { text-align: center; }
   .column-2 img { width: 400px; }
   .column-1 p { text-align: justify; }
-  .records { margin-top: -2rem; }
-
-  .records .container .wrap .record-circle {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .records .container .wrap .record-circle h4 {
-    position: absolute;
-    top: 90px;
-    font-size: 10px;
-  }
 
   .footer .grid-4 {
     display: flex;
@@ -426,8 +371,6 @@
     justify-content: center;
   }
 
-  .records { display: none; }
-
   .social-medias {
     padding-left: 0;
   }
@@ -436,6 +379,14 @@
 @media (max-width: 430px) {
   .container {
     width: 100%;
+  }
+
+  .header-content .social-medias {
+    width: 100% !important;
+  }
+
+  .header-content .contButtonsHeader {
+    width: 100% !important;
   }
 
   .col h2 { font-size: 1rem; }
@@ -449,8 +400,6 @@
     justify-content: center;
   }
 
-  .information .contact-icon { width: 30px; height: 65px; }
-  .information-wrap .information .info-text { font-size: 0.8rem; }
   .bottom-footer .copyright .text { font-size: 0.8rem; }
   .bottom-footer .followme-wrap .followme h3 { font-size: 1rem; }
   .bottom-footer .followme-wrap .followme i { display: flex; font-size: 0.8rem; }
@@ -465,23 +414,17 @@
 
   .footer .container .followme-wrap .followme h3 { font-size: 1rem; }
   .footer .container .bottom-footer .copyright p { padding-top: 10px; }
-  .contact-info h2 { font-size: 1rem; text-align: center; }
-  .contact-info .text { text-align: center; }
   .contact-box .contact-form { display: flex; }
-}
 
-@media (max-width: 430px) {
   .column-1 .contButtonsHeader .header-title { font-size: 1.5rem; }
   .contButtonsHeader .social-medias a { font-size: 1.5rem; }
   .services .cards .card-wrap .card .card-content .tit { padding: 20px 50px 0 50px; transition: 500ms; }
-  .sobremi .cards .card-wrap .card .card-content .tit { padding: 50px; }
   .contenedor-habilidades .cardHabilidad { width: 160px; margin: 5px; }
   .contenedor-habilidades .cardHabilidad img { width: 80px; height: 80px; }
   .cardHabilidad:hover img { width: 90px; height: 90px; }
 
   .column-2 img { width: 300px; }
   .contact-box { padding: 0; }
-  .contact-form { width: 100%; margin-top: -100px; }
   .contact-form h2 { font-size: 2rem; }
   .contact-info h2 { font-size: 2rem; }
   .contact-input { width: 100%; }
