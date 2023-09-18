@@ -27,6 +27,11 @@
   border: 6px double #17171a;
 }
 
+.cardHabilidad:hover {
+  transition: 350ms;
+  scale: 0.95;
+}
+
 .contImage { padding-bottom: 30px; }
 
 .contImage {
@@ -46,64 +51,19 @@
   transition: 0.3s;
 }
 
-.cardHabilidad:hover img {
-  width: 110px;
-  height: 110px;
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-
 .cardHabilidad:hover a { background-color: var(--verdin); color: #111113; }
-.cardHabilidad:hover .progreso1 { width: 78%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso2 { width: 82%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso3 { width: 32%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso4 { width: 26%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso5 { width: 22%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso6 { width: 42%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso7 { width: 20%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso8 { width: 12%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso9 { width: 32%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso10 { width: 42%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso11 { width: 30%; background-color: var(--verdin); }
-.cardHabilidad:hover .progreso12 { width: 10%; background-color: var(--verdin); }
-
-.records {
-  position: relative;
-  background-color: #17171a;
-  padding: 5.2rem 0;
-  top: -60px;
-  z-index: 1;
-}
-
-.records .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 2rem;
-}
-
-.record-circle {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  margin: 0 auto;
-  border: 7px double var(--verdin);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--light-three);
-}
-
-.record-circle.active {
-  background-color: var(--light-thoro);
-  color: var(--light-three);
-  box-shadow: 0 0 0 15px rgba(248, 247, 247, 0.938);
-  border: 7px double #fff;
-}
+.cardHabilidad:hover .progreso1 { width: 70%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso2 { width: 70%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso3 { width: 32%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso4 { width: 26%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso5 { width: 22%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso6 { width: 42%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso7 { width: 20%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso8 { width: 12%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso9 { width: 32%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso10 { width: 42%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso11 { width: 30%; background-color: var(--verdin); transition: 500ms; }
+.cardHabilidad:hover .progreso12 { width: 10%; background-color: var(--verdin); transition: 500ms; }
 
 .number { font-weight: 400; font-size: 2.35rem; font-family: 'Silkscreen', cursive; }
 .sub-title { font-weight: 400; font-size: 1.12rem; text-transform: uppercase; }
@@ -132,7 +92,6 @@
   height: 10px;
   background-color: #17171a;
   margin: -1px;
-  transition: 0.3s;
   border: none;
 }
 
