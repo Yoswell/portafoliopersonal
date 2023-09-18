@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #17171a;
 }
 
 .porta {
@@ -47,8 +48,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px !important;
-  height: 40px !important;
+  width: 50px !important;
+  height: 50px !important;
   background-color: #17171a;
   color: #fff;
   font-size: 1rem;
@@ -66,6 +67,7 @@
 .seccionesPortafolio .btn:hover {
   background-color: #24252a;
   color: #17171a;
+  scale: 1.3;
 }
 
 .cardPortafolio {
@@ -83,24 +85,47 @@
   border: 6px double #24252a;
 }
 
+.cardPortafolio img {
+  filter: drop-shadow(8px 8px 4px #111113);
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.cardPortafolio:hover img {
+  transition: 500ms;
+  filter: drop-shadow(8px 8px 4px #111113);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
 .cardPortafolio .btn {
-  background-color: #333333;
+  background-color: #24252a;
   color: rgb(255, 255, 255);
-  width: 45px;
-  height: 45px;
+  width: 100%;
+  height: 30px;
   padding: 0;
-  border: 6px double #17171a;
   font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #F77D8C;
+  border-radius: 10px;
 }
 
 .desplegar {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.contButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
 }
 
 .icon { 
@@ -108,40 +133,14 @@
   margin: 0;
 }
 
-.ambos { display: flex; }
-
-.ambos .btn i {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-}
-
-.ambos a {
-  width: 45px !important;
-  height: 45px !important;
-}
-
-.ambos .a1 { margin-right: 5px; }
-.ambos .a2 { margin-left: 0; }
-
 .contButton .a1 { margin-right: 2px; }
 .contButton .a2 { margin-left: 0; }
 
-.contButton {
-  width: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.cardPortafolio h3 { color: #b4b4b4; padding-bottom: 30px; }
-.btns1:hover { background-color: #706CE7; color: #000; }
-.btns2:hover { background-color: #F5D755; color: #000; }
-.btns3:hover { background-color: #F77D8C; color: #000; }
-.card-wrap:hover .cardPortafolio { transform: translateY(-10px); }
+.cardPortafolio h3 { color: #b4b4b4; padding-bottom: 30px; text-align: left; }
+.btns1:hover { background-color: #F77D8C; color: #000; scale: 0.9; transition: 500ms; }
+.btns2:hover { background-color: #F77D8C; color: #000; scale: 0.9; transition: 300ms; }
+.btns3:hover { background-color: #F77D8C; color: #000; scale: 0.9; transition: 300ms; }
+.card-wrap:hover .cardPortafolio { scale: 0.95; }
 
 @media only screen and (max-width: 1100px) {
   .cardsPortafolio {
