@@ -85,19 +85,6 @@
   border: 6px double #24252a;
 }
 
-.cardPortafolio img {
-  filter: drop-shadow(8px 8px 4px #111113);
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-
-.cardPortafolio:hover img {
-  transition: 500ms;
-  filter: drop-shadow(8px 8px 4px #111113);
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-
 .cardPortafolio .btn {
   background-color: #24252a;
   color: rgb(255, 255, 255);
@@ -108,7 +95,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #F77D8C;
+  border: 1px solid #17171a;
   border-radius: 10px;
 }
 
