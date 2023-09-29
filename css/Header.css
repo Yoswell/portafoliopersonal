@@ -177,6 +177,7 @@ header nav.open .links {
   border: none;
   border-radius: 50%;
   transition: 0.3s;
+  background-color: #24252a;
 }
 
 .principal {
