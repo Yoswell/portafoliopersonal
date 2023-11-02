@@ -1,5 +1,5 @@
 /* Contact */
-.contact { position: relative; width: 100%; padding-top: 120px; padding-bottom: 120px; }
+.contact { position: relative; width: 100%; padding-top: 120px; padding-bottom: 150px; background-color: #24252a; }
 .contact:before,
 .contact:after {
   content: "";
@@ -19,7 +19,7 @@
   flex-wrap: wrap;
   background-color: #17171a;
   width: 100%;
-  border-radius: 45px;
+  border-radius: 10px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -29,8 +29,9 @@
 }
 
 .submit {
-  border: 6px double #17171a !important;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .contact-icon i { line-height: 67px; }
@@ -70,14 +71,14 @@
   outline: none;
   background: #24252a;
   color: var(--light-three); ;
-  border-radius: 10px;
-  font-weight: 600;
+  border-radius: 5px;
+  font-weight: 300;
   font-size: 1.25rem;
   transition: 0.3s;
 }
 
 .row textarea { resize: none; width: 75%; min-height: 280px; border-radius: 10px; }
-.contact-input::placeholder { font-weight: 400; }
+.contact-input::placeholder { font-weight: 300; }
 .contact-input:focus { background: var(--light-three);  color: #111113; }
 .contact-input .btn { margin-top: 0.6rem; }
 /* End Contact */
