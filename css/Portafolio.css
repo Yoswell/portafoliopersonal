@@ -1,6 +1,9 @@
 #cplusplus,
 #react,
-#java,
+#java {
+  display: none;
+}
+
 #csharp {
   display: none;
 }
@@ -124,7 +127,7 @@
 
 .contButton .a1 { margin-right: 2px; }
 .contButton .a2 { margin-left: 0; }
-.cardPortafolio h3 { color: #b4b4b4; padding-bottom: 30px; text-align: left; display: none; }
+.cardPortafolio h3 { color: #b4b4b4; padding-bottom: 10px; font-weight: 500; }
 
 .btns1:hover,
 .btns2:hover,
