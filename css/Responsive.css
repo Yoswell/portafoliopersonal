@@ -348,7 +348,17 @@
   .review-nav { bottom: 1.5rem; font-size: 1.3rem; }
 
   .column-2 img { width: 400px; }
-  .column-1 p { text-align: justify; }
+  .column-1 p { font-size: 1rem; text-align: left; }
+  .column-1 .text span { font-size: 1rem; }
+
+  .column-1 .social-medias {
+    height: 50px;
+  }
+
+  .column-1 .social-medias a {
+    width: 50px;
+    height: 50px;
+  }
 
   .footer .grid-4 {
     display: flex;
@@ -419,6 +429,7 @@
   .column-1 .contButtonsHeader .header-title { font-size: 1.5rem; }
   .contButtonsHeader .social-medias a { font-size: 1.5rem; }
   .services .cards .card-wrap .card .card-content .tit { padding: 20px 50px 0 50px; transition: 500ms; }
+  .services .textSer { font-size: 1rem; }
   .contenedor-habilidades .cardHabilidad { width: 160px; margin: 5px; }
   .contenedor-habilidades .cardHabilidad img { width: 80px; height: 80px; }
   .cardHabilidad:hover img { width: 90px; height: 90px; }
@@ -427,7 +438,7 @@
   .contact-box { padding: 0; }
   .contact-form h2 { font-size: 2rem; }
   .contact-info h2 { font-size: 2rem; }
-  .contact-input { width: 100%; }
+  .contact-input { width: 100%; font-size: 1rem !important; }
   .row textarea { width: 100%; }
 }
 /* End Responsive */
