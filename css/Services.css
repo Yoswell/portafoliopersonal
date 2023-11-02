@@ -34,7 +34,7 @@
   text-align: center;
   transition: 0.3s;
   color: #a7a7a8;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 6px double #24252a;
 } .card:hover {
   scale: 0.95;
@@ -78,8 +78,8 @@
   font-size: 1.2rem;
   transition: 0.3s;
   line-height: 30px;
-  font-weight: 600;
-  color: #616161;
+  font-weight: 300;
+  color: #cacaca;
   padding-top: 30px;
 }
 /* End Services */
