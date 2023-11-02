@@ -1,11 +1,11 @@
 /* Records */
 .skills {
   position: relative;
-  margin-top: 100px;
+  margin-top: 0px;
   color: #fff;
   background-color: #17171a;
   padding: 0 2px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@
   flex-direction: column;
   margin: 5px;
   background-color: #24252a;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   border: 6px double #17171a;
 }
@@ -68,7 +68,7 @@
 .cardHabilidad:hover .progreso11 { width: 30%; background-color: var(--verdin); transition: 500ms; }
 .cardHabilidad:hover .progreso12 { width: 10%; background-color: var(--verdin); transition: 500ms; }
 
-.number { font-weight: 400; font-size: 2.35rem; font-family: 'Silkscreen', cursive; }
+.number { font-weight: 400; font-size: 2.35rem; font-family: 'Montserrat', sans-serif; }
 .sub-title { font-weight: 400; font-size: 1.12rem; text-transform: uppercase; }
 
 .barraprogreso {
@@ -122,7 +122,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  font-family: 'Silkscreen', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 /* End Records */
 
