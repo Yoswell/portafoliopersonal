@@ -1,6 +1,6 @@
 /* Header */
 header {
-  padding-top: 90px;
+  padding-top: 100px;
   width: 100%;
   height: 100%;
   background-color: #17171a;
@@ -65,7 +65,7 @@ nav .container {
   color: var(--white-there);
   font-size: 1rem;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 1;
 }
 
@@ -133,6 +133,12 @@ header nav.open .links {
 
 .column-1 .text {
   padding-bottom: 20px;
+  text-align: left;
+  color: #cacaca;
+}
+
+.column-1 .text span {
+  font-size: 1.1rem;
 }
 
 .column-1 .contButtonsHeader {
@@ -183,6 +189,7 @@ header nav.open .links {
 .principal {
   color: #f0f0f0;
   background-color: #24252a;
+  font-weight: 500;
 }
 
 .principal:hover { scale: 1.1; background-color: #F77D8C; color: #17171a; }
