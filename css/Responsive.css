@@ -69,11 +69,6 @@
   .header-content .image .img-element { max-width: 500px; }
   nav .container { height: 4.5rem; }
 
-  .header-content .container.grid-2 {
-    min-height: calc(100vh - 4.5rem);
-    padding-bottom: 1.5rem;
-  }
-
   .links a {
     font-size: 0.8rem;
     padding: 0.65rem 0.7rem;
