@@ -7,6 +7,7 @@ const footer_input = document.querySelector(".footer-input");
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
+const cv = document.getElementById('cv');
 
 footer_input.addEventListener("focus", () => {
   footer_input.classList.add("focus");
@@ -88,4 +89,9 @@ openHtml.addEventListener('click', (e) => {
   java.style.display = "none";
   csharp.style.display = "none";
   htmlCss.style.display = "grid";
+});
+
+cv.addEventListener('click', function() {
+  var pdfUrl = 'https://drive.google.com/file/d/11d923_WySt_evUQh6ZzLoq-jlSZoQIy7/view?usp=sharing';
+  window.open(pdfUrl, '_blank');
 });
