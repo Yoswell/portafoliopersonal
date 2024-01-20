@@ -92,6 +92,6 @@ openHtml.addEventListener('click', (e) => {
 });
 
 cv.addEventListener('click', function() {
-  var pdfUrl = 'https://drive.google.com/file/d/11d923_WySt_evUQh6ZzLoq-jlSZoQIy7/view?usp=sharing';
+  var pdfUrl = 'https://drive.google.com/file/d/1kTrWLY6MwDoxtorUQ5xJ7eYUe1fyC321/view?usp=sharing';
   window.open(pdfUrl, '_blank');
 });
