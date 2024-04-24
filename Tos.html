@@ -1,664 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yoswel Badilla | Desarrollador Jr</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Silkscreen&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;800&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="css/Tos.css" />
-  <link rel="stylesheet" href="css/Responsive.css" />
-  <link rel="stylesheet" href="css/Header.css" />
-  <link rel="stylesheet" href="css/Services.css" />
-  <link rel="stylesheet" href="css/Portafolio.css" />
-  <link rel="stylesheet" href="css/About.css" />
-  <link rel="stylesheet" href="css/Records.css" />
-  <link rel="stylesheet" href="css/Contacto.css" />
-  <link rel="stylesheet" href="css/Footer.css" />
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio | Yoswel Badilla</title>
 </head>
 
-<body id="body">
-  <main>
-    <header id="header">
-      <nav id="nav">
-        <div class="container">
-          <div class="links">
-            <ul>
-              <li><a href="#header" onclick="seleccionar()">Inicio</a></li>
-              <li><a href="#services" onclick="seleccionar()">Sobremi</a></li>
-              <li><a href="#servicesPortafolio" onclick="seleccionar()">Portfolio</a></li>
-              <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-              <li><a href="#contact" class="active" onclick="seleccionar()">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="hamburger-menu" onclick="mostrarOcultarMenu()">
-            <dv class="bar"></div>
-          </div>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.png">
+                <h1>Vishok</h1>
+            </a>
         </div>
-      </nav>
 
-      <div class="header-content">
-        <div class="container grid-2">
-          <div class="column-2 image">
-            <img src="img/YoVerdinn.png" class="img-element pos" alt="" />
-          </div>
-          <div class="column-1">
-            <p class="text">
-              <span>Hola, soy Yoswel Badilla</span>
-              un apasionado estudiante de Ingeniería Informática. Me encanta enfrentar nuevos desafíos y adquirir nuevas habilidades cada día para mejorar y perfeccionar mi trabajo. 
-              Si estás buscando a alguien con pasión por la informática, el desarrollo de videojuegos y la creación web, estoy listo para contribuir y marcar la diferencia en tu equipo. 
-              ¡Gracias por visitar mi portafolio web y espero tener la oportunidad de trabajar juntos para crear proyectos asombrosos y memorables! 
+        <ul class="nav-links">
+            <li class="link"><a href="#">Inicio</a></li>
+            <li id="link1" class="link"><a href="#">Servicios</a></li>
+            <li id="link2" class="link"><a href="#">Proyectos</a></li>
+            <li id="link3" class="link"><a href="#">Sobremi</a></li>
+        </ul>
+        <a href="https://drive.google.com/file/d/1qEa59yd1BmLJerpx1eF-zsTo8a3G4Hfz/view?usp=sharing" class="btn">Contratame</a>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>Contrata mis sevicios</h4>
+            <H1><span>Yoswel Badilla</span>, Desarrollador Web, Desarrollador de Software y Analista Junior en Ciberseguridad</H1>
+            <p>
+                Ingenierío Informático en busca de oportunidades para adquirir experiencia en áreas
+                como el Desarrollo y la Ciberseguridad. Disfruto colaborar en equipo y brindar
+                apoyo
+                de la mejor manera posible. Mi interés radica en aprender y crecer
+                continuamente.
+                Actualmente, me estoy especializando en Ciberseguridad como Analista Junior de
+                Ciberseguridad, buscando aplicar y mejorar mis habilidades en entornos
+                desafiantes!
             </p>
-            <div class="social-medias">
-              <a href="https://facebook.com/yoswell.badilla.7"><i class="fab fa-facebook-f"></i> </a>
-              <a href="https://www.instagram.com/_yossb_?r=nametag"><i class="fab fa-instagram"></i> </a>
-              <a href="https://https://www.linkedin.com/in/yoswel-badilla-cyberjr/"><i
-                  class="fab fa-linkedin-in"></i> </a>
-              <a href="https://github.com/Yoswell"><i class="fab fa-github"></i></a>
+            <div class="social-media">
+                <a href="https://facebook.com/yoswell.badilla.7"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ffffff"
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                    </svg></a>
+                <a href="https://www.instagram.com/_yossb_?r=nametag"><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ffffff"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg></a>
+                <a href="https://www.linkedin.com/in/yoswel-badilla-7bb654212/?locale=en_US"><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ffffff"
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg></a>
+                <a href="https://github.com/Yoswell"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ffffff"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                    </svg></a>
+                <a href="https://drive.google.com/file/d/1qEa59yd1BmLJerpx1eF-zsTo8a3G4Hfz/view?usp=sharing"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></a>
             </div>
-            <div class="contButtonsHeader">
-              <button href="#" class="btn1"></button>
-              <button id="cv" href="#" class="btn principal">Descargar CV</button>
-              <button href="#" class="btn2"></button>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="image">
+            <img src="images/Yo.png">
+        </div>
     </header>
 
-    <section class="services section" id="services">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="title" data-title="Sección">Sobremi</h3>
+    <section class="container">
+        <h2 class="header">Mis Servicios</h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-bug-line"></i></span>
+                <h4>Trabajos universitarios</h4>
+                <p>
+                    Ofrezco asistencsia y apoyo en la realización de trabajos universitarios
+                    relacionados con informática. Desde la investigación hasta la redacción, puedo
+                    ayudarte a alcanzar tus objetivos académicos con calidad y precisión
+                </p>
+                <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-history-line"></i></span>
+                <h4>Desarrollo Web</h4>
+                <p>
+                    Desarrollo web de alta calidad adaptado a tus especificaciones. Desde
+                    la creación de sitios web estáticos hasta aplicaciones web dinámicas, puedo ayudarte a
+                    construir una presencia en línea robusta y escalable que impulse tu éxito en la web
+                </p>
+                <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-shake-hands-line"></i></span>
+                <h4>Desarrollo de Software</h4>
+                <p>
+                    Desarrollo de software a medida para cubrir tus necesidades
+                    empresariales. Desde aplicaciones de escritorio hasta soluciones empresariales
+                    complejas, estoy aquí para ofrecerte soluciones innovadoras que impulsen el
+                    crecimiento de tu negocio
+                </p>
+                <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+            </div>
         </div>
-        <div class="cards">
-          <div class="card-wrap">
-            <div class="card card1" id="card">
-              <div class="card-content z-index">
-                <div class="contIcons">
-                  <img src="img/u.jpg" class="icons" alt="" />
-                </div>
-                <p class="textSer">Informatica<br>Diplomado 2021-2023</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="card card2" id="card">
-              <div class="card-content z-index">
-                <div class="contIcons">
-                  <img src="img/alu.jpg" class="icons" alt="" />
-                </div>
-                <p class="textSer">Alura Latam<br>Front-End 2022</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="card card3" id="card">
-              <div class="card-content z-index">
-                <div class="contIcons">
-                  <img src="img/cari.jpg" class="icons" alt="" />
-                </div>
-                <p class="textSer">Bachillerato<br>Educación media 2015-2020</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="card card1" id="card">
-              <div class="card-content z-index">
-                <div class="contIcons">
-                  <img src="img/elev8.jpg" class="icons" alt="" />
-                </div>
-                <p class="textSer">Elev8 Academy<br>Junior Cybersecurity Specialist 2023</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="card card1" id="card">
-              <div class="card-content z-index">
-                <div class="contIcons">
-                  <img src="img/u.jpg" class="icons" alt="" />
-                </div>
-                <p class="textSer">Ingenieria Informatica<br>Bachillerato 2023-Actualidad</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="services section servicesPortafolio" id="servicesPortafolio">
-      <div class="section-header">
-        <h3 class="title" data-title="Sección">Proyectos</h3>
-      </div>
-      <div class="seccionesPortafolio">
-        <button class="btn" id="openReact"><img src="img/react.png"></button>
-        <button class="btn" id="openCplusplus"><img src="img/icons8-c++-144.png"></button>
-        <button class="btn" id="openCsharp"><img src="img/icons8-c-sharp-logo-144.png"></button>
-        <button class="btn" id="openHtml"><img src="img/icons8-javascript-144.png"></button>
-        <button class="btn" id="openJava"><img src="img/icons8-java-144.png"></button>
-      </div>
-      <div class="container porta">
-        <div class="cardsPortafolio" id="htmlCss">
-          <div class="card-wrap">
-            <div class="cardPortafolio center" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/Preguntados.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://yoswell.github.io/Juego-De-Preguntados-Javascript/Index.html" class="btn a1 btns2"><i class="fas fa-eye"></i></a>
-                  <a href="https://github.com/Yoswell/Juego-De-Preguntados-Javascript" class="btn a2 btns2"><i class="fab fa-github"></i></a>
+    <section class="container">
+        <h2 class="header">Proyectos</h2>
+        <p class="sub-header">
+            A continuacion te presento algunos de mis proyectos que considero como los mas relevantes
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <img src="images/m.png">
+                    <h4>Aplicacion desktop de matricula estudiantil (Desktop)</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Esta aplicación de escritorio, desarrollada en Java, está
+                        diseñada para facilitar la gestión de cursos educativos en instituciones académicas como
+                        colegios, escuelas y universidades
+                    </p>
                 </div>
-                <h3>Juego de preguntados</h3>
-              </div>
             </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/papel.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://yoswell.github.io/JuegoPiedraPapelOTijera/Tos.html" class="btn a1 btns3"><i class="fas fa-eye"></i></a>
-                  <a href="https://github.com/Yoswell/JuegoPiedraPapelOTijera" class="btn a2 btns3"><i class="fab fa-github"></i></a>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m3.png">
+                    <h4>Aplicacion de afiliacion de gimnasios a la ANGCS</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Este programa ofrece una solución integral para el registro y
+                        gestión de gimnasios afiliados a la Asociación Nacional de Gimnasios y Centros de Salud
+                    </p>
                 </div>
-                <h3>Piedra, papel o tijera</h3>
-              </div>
             </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio center" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/kit.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://yoswell.github.io/Kit-de-herramientas/Index.html" class="btn a1 btns2"><i class="fas fa-eye"></i></a>
-                  <a href="https://github.com/Yoswell/Kit-de-herramientas" class="btn a2 btns2"><i class="fab fa-github"></i></a>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m4.png">
+                    <h4>Aplicacion de registro de peliculas de Streaming</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Aplicacion que ofrece una solución para gestionar películas por
+                        proveedor de streaming
+                    </p>
                 </div>
-                <h3>Kit de herramientas</h3>
-              </div>
             </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/Barberia.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://yoswell.github.io/barberia-loro/" class="btn a1 btns1"><i class="fas fa-eye"></i></a>
-                  <a href="https://github.com/Yoswell/barberia-loro" class="btn a2 btns1"><i class="fab fa-github"></i></a>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m7.png">
+                    <h4>Consersor a moneda entre 5 paises</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Esta aplicacion es un conversor de una moneda a otra, conteniendo
+                        en total hasta 5 diferentes monedas a nivel mundial como el Euro, el Colon, el
+                        Dolar, etc...
+                    </p>
                 </div>
-                <h3>Barberia</h3>
-              </div>
             </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/pc.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://yoswell.github.io/ecommerce/Tos.html" class="btn a1 btns2"><i class="fas fa-eye"></i></a>
-                  <a href="https://github.com/Yoswell/ecommerce" class="btn a2 btns2"><i class="fab fa-github"></i></a>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m8.png">
+                    <h4>Tienda de postales del mundial de Qatar</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Tienda para vender postales del libro de jugadores del Mundial de
+                        Qatar 2022, crea tu propia coleccion de postales y completa el libro
+                    </p>
                 </div>
-                <h3>E-commerse</h3>
-              </div>
             </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio center" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/listin.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://yoswell.github.io/lista-de-tareas/Index.html" class="btn a1 btns3"><i class="fas fa-eye"></i></a>
-                  <a href="https://github.com/Yoswell/lista-de-tareas" class="btn a2 btns3"><i class="fab fa-github"></i></a>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m9.png">
+                    <h4>Aplicacion para gestionar una Biblioteca</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Aplicacion para gestionar el registro, obsolecencia de lirbos y
+                        busquedas de los mismo para poder prestarlos o alquilarnos de acuerdo a las
+                        necesidades de las personas
+                    </p>
                 </div>
-                <h3>Lista de Tareas</h3>
-              </div>
             </div>
-          </div>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m2.png">
+                    <h4>Aplicacion clon de Microsoft Learn</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Esta aplicación web es una réplica visualmente de la reconocida
+                        plataforma, Microsoft Learn. Aunque carece de funcionalidades interactivas, esta
+                        proyecto se centra exclusivamente en replicar la interfaz gráfica y la
+                        experiencia de usuario
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m1.png">
+                    <h4>Aplicacion clon de React DevTools</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Esta aplicación web es una réplica inspirada en la conocida
+                        herramienta React DevTools, con funcionalidades basicas. Al igual que su
+                        homónima, esta aplicación permite a los desarrolladores inspeccionar aprender sobre React
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m17.png">
+                    <h4>Aplicacion para matricula de cursos estudiantiles (movil)</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Este proyecto es un replica del proyecto: Aplicacion desktop de
+                        matricula estudiantil (Desktop) en java, diseñado para que los estudientes
+                        puedan matricular en su regreso a clases
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m18.png">
+                    <h4>Videojuego de Bingo (Desktop)</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Esta aplicación fue desarrollada en C++ para ser ejecutada en consola
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m19.png">
+                    <h4>Videojuego Preguntados (Desktop)</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Esta aplicación fue desarrollada en C++ para ser ejecutada en consola
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="images/m5.png">
+                    <h4>Videojuego Serpientes y Escaleras (Desktop)</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Esta aplicación fue desarrollada en C++ para ser ejecutada en consola
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <div class="cardsPortafolio" id="cplusplus">
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/Bingo.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/Juego-de-Bingo/tree/main" class="btn btns1"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Juego de Bingo</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/PreguntadosC.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/Juego-de-Preguntados" class="btn btns1"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Juego de preguntados</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio start" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/JUEGOSERPIENTES.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/Juego-Serpientes-y-escaleras-con-sumas" class="btn btns1"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Juego Serpientes y escaleras</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cardsPortafolio" id="react">
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/freeCodeCamp.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/Clon_freeCodeCamp" class="btn btns2"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Clon de freeCodeCamp</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/reactDev.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/Clone_reactDev" class="btn btns3"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Clon de React dev</h3>
-            </div>
-          </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/microsoft.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/Clone_Microsoft_Learn" class="btn a1 btns1"><i class="fab fa-github"></i></a>
-                  <a href="https://www.youtube.com/watch?v=PG7ZYOwSHLE" class="btn a2 btns1"><i class="fab fa-youtube"></i></a>
-                </div>
-                <h3>Clon de Microsoft Learn</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/AppNative.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/App_Cusros_Educativos" class="btn btns2"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>App matricula de cursos (Mobile)</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <div class="cardsPortafolio" id="java">
-          <div class="card-wrap">
-            <div class="cardPortafolio start" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/Codorniz.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/concentradoCodorniz" class="btn btns1"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Tienda (consentrado) de Codorniz</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio center" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/Conversor.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/Conversor-De-Monedas" class="btn btns2"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Conversor de monedas</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/TiendaMundial.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/Tianda-Mundial-Qatar" class="btn btns3"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Tienda de postales del mundial</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/gimnasios.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/REGISTRO_D_GIMNASIOS/tree/main" class="btn btns1"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Inscipción de gimnasios</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/peliculas.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/REGISTRO_D_PELICULAS_D_STREAMING/tree/main" class="btn btns1"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Gestión de peliculas de streaming</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/arbol.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="" class="btn btns1"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Gestión de arboles binarios</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio end" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/matriculaEstudiantes.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/App_Cursos_Educativos_Desktop" class="btn btns2"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>App matricula de cursos (Desktop)</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cardsPortafolio" id="csharp">
-          <div class="card-wrap">
-            <div class="cardPortafolio start" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/AerounedConsola.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/AEROU_consola" class="btn btns1"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Registro aeropuertos</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="cardPortafolio center" id="cardPortafolio" data-card="App">
-              <div class="card-contentPortafolio z-index">
-                <img src="img/Aerouned.png" class="icon" alt="" />
-              </div>
-              <div class="desplegar">
-                <div class="contButton">
-                  <a href="https://github.com/Yoswell/AEROU_Formulario" class="btn btns2"><i class="fab fa-github"></i></a>
-                </div>
-                <h3>Registro aeropuertos</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
 
-    <section class="skills" id="skills">
-      <div class="contenido-seccion">
-        <div class="section-header">
-          <h3 class="title" data-title="Sección">Habilidades</h3>
+    <section class="container">
+        <h2 class="header">Mis Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <img src="images/icons8-adobe-photoshop-144.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-c++-144.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-c-sharp-logo-144.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-microsoft-sql-server-144.png">
+            </div>
+            <div class="card">
+                <img src="images/react.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-cisco-router-96.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-html-5-144.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-css3-144.png">
+            </div>
+            <div class="card">
+                <img src="images/linux.png">
+            </div>
+            <div class="card">
+                <img src="images/python.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-java-144.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-javascript-144.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-github-144.png">
+            </div>
+            <div class="card">
+                <img src="images/icons8-circuit-91.png">
+            </div>
         </div>
-        <div id="habilidades">
-          <div class="contenedor-habilidades">
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-html-5-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso1"></div>
-                <a href="#">80%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-css3-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso2"></div>
-                <a href="#">80%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-javascript-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso3"></div>
-                <a href="#">42%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-c++-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso4"></div>
-                <a href="#">36%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-java-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso5"></div>
-                <a href="#">32%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-adobe-photoshop-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso6"></div>
-                <a href="#">52%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/react.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso7"></div>
-                <a href="#">30%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-microsoft-sql-server-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso8"></div>
-                <a href="#">22%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-cisco-router-96.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso9"></div>
-                <a href="#">42%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-circuit-91.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso10"></div>
-                <a href="#">52%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-github-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso11"></div>
-                <a href="#">40%</a>
-              </div>
-            </div>
-            <div class="cardHabilidad">
-              <div class="contImage">
-                <img src="img/icons8-c-sharp-logo-144.png" alt="">
-              </div>
-              <div class="barraprogreso">
-                <div class="progreso12"></div>
-                <a href="#">20%</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="section-header">
-        <h3 class="title" data-title="Sección">Contactarme</h3>
-      </div>
-      <div class="container">
-        <div class="contact-box">
-          <div class="contact-form">
+    <section class="container">
+        <h2 class="header">Contactarme</h2>
+        <div class="contact">
             <form action="https://formspree.io/f/xqkjlrvd" method="POST">
-              <div class="row">
-                <input type="text" class="contact-input" placeholder="Nombre" />
-                <input type="text" class="contact-input" placeholder="Apellidos" />
-              </div>
-              <div class="row">
-                <input type="text" class="contact-input" placeholder="Telefono" />
-                <input type="email" name="email" class="contact-input" placeholder="Email">
-              </div>
-              <div class="row">
-                <textarea name="message" class="contact-input" placeholder="Descripción"></textarea>
-              </div>
-              <button type="submit" class="btn submit">Enviar</button>
+                <div class="row">
+                    <input type="text" class="contact-input" placeholder="Nombre" />
+                    <input type="text" class="contact-input" placeholder="Apellidos" />
+                </div>
+                <div class="row">
+                    <input type="text" class="contact-input" placeholder="Telefono" />
+                    <input type="email" name="email" class="contact-input" placeholder="Email">
+                </div>
+                <div class="row">
+                    <textarea name="message" class="contact-input" placeholder="Descripción"></textarea>
+                </div>
+                <button type="submit" class="btn submit">Enviar</button>
             </form>
-          </div>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="grid-4">
-        <div class="grid-4-col footer-about">
-          <h3 class="title-sm">Mis redes</h3>
-          <p class="text">
-            Hola, estas son mis redes sociales
-          </p>
-          <div class="followme-wrap">
-            <div class="followme">
-              <div class="social-media">
-                <a href="https://facebook.com/yoswell.badilla.7"> <i class="fab fa-facebook-f"></i> </a>
-                <a href="https://www.instagram.com/_yossb_?r=nametag"> <i class="fab fa-instagram"></i> </a>
-                <a href="https://https://www.linkedin.com/in/yoswel-badilla-cyberjr/"> <i
-                    class="fab fa-linkedin-in"></i> </a>
-                <a href="https://github.com/Yoswell"><i class="fab fa-github"></i> </a>
-              </div>
-            </div>
-          </div>
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <h4>Servicios</h4>
+            <a href="#">Trabajos universitarios</a>
+            <a href="#">Desarrollo Web</a>
+            <a href="#">Desarrollo de Software</a>
         </div>
-
-        <div class="grid-4-col footer-links">
-          <div class="footer-linkss">
-            <ul>
-              <h3 class="title-sm">Links</h3>
-              <li> <a href="#services">Servicios</a> </li>
-              <li> <a href="#portfolio">Portfolio</a> </li>
-              <li> <a href="#sobremi">Sobre mi</a> </li>
-              <li> <a href="#contact">Contacto</a> </li>
-            </ul>
-          </div>
-          <div class="footer-linkss">
-            <ul>
-              <h3 class="title-sm">Services</h3>
-              <li> <a href="#">Diseño Web</a> </li>
-              <li> <a href="#">Desarrollo Web</a> </li>
-              <li> <a href="#">Desarrollo de videojuegos</a> </li>
-            </ul>
-          </div>
+        <div class="column">
+            <h4>Sobre mi</h4>
+            <a href="https://www.linkedin.com/in/yoswel-badilla-cyberjr/">Linkedin</a>
+            <a href="https://github.com/Yoswell">Github</a>
+            <a href="https://www.instagram.com/_yossb_?r=nametag">Instagram</a>
         </div>
-
-        <div class="grid-4-col footer-newstletter">
-          <h3 class="title-sm">Contactarme</h3>
-          <p class="text">
-            Puedes comunicarte conmigo enviando un correo aca abajo
-          </p>
-          <div class="footer-input-wrap">
-            <input type="email" class="footer-input" placeholder="yoswel2003@gmail.com" />
-            <a href="#header" class="input-arrow">
-              <i class="fas fa-angle-up"></i>
-            </a>
-          </div>
+        <div class="column">
+            <h4>Contactarme</h4>
+            <a href="https://www.linkedin.com/in/yoswel-badilla-cyberjr/">Linkedin</a>
+            <a href="#">jacssonabyssus@gmail.com</a>
         </div>
-      </div>
-    </div>
-  </footer>
-<script src="app.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
