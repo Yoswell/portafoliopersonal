@@ -104,7 +104,7 @@ header {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    background-image: url("/images/space.png");
+    background-image: url("images/space.png");
     background-size: 90%;
     background-position: right;
     background-position-y: 0px;
