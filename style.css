@@ -94,7 +94,7 @@ nav {
 .container {
     max-width: 1200px;
     margin: auto;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
 
     & .sub-header { font-size: 0.9rem; }
 }
@@ -588,14 +588,16 @@ section .header {
     }
 }
 
+@media (width < 650px) {
+    .nav-links {
+        display: none;
+    }
+}
+
 @media (width < 600px) {
     header {
         background-position-y: 100px;
         background-size: 500px;
-    }
-
-    .nav-links {
-        display: none;
     }
 
     .features {
