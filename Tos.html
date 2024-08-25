@@ -9,30 +9,41 @@
     <title>Yoswel Badilla | Hacker | Dev</title>
 </head>
 
-<body>
+<body class="scroll-container"">
     <nav>
         <div class="nav-logo">
             <a href="#">
                 <img src="images/logo.png">
-                <h1>Vishok</h1>
             </a>
+            <h1>Vishok</h1>
+            <ul class="nav-links">
+                <li class="link"><a href="#">Inicio</a></li>
+                <li class="link"><a href="#servicios">Servicios</a></li>
+                <li class="link"><a href="#proyectos">Proyectos</a></li>
+                <li class="link"><a href="#skills">Skills</a></li>
+                <li class="link"><a href="#contacto">Contacto</a></li>
+            </ul>
         </div>
-
-        <ul class="nav-links">
-            <li class="link"><a href="#">Inicio</a></li>
-            <li id="link1" class="link"><a href="#servicios">Servicios</a></li>
-            <li id="link2" class="link"><a href="#proyectos">Proyectos</a></li>
-            <li id="link3" class="link"><a href="#skills">Skills</a></li>
-            <li id="link3" class="link"><a href="#contacto">Contacto</a></li>
-        </ul>
+        <button class="menu-button" id="menu-bar">
+            <i class="ri-menu-3-fill"></i> 
+        </button>
     </nav>
-
-    <header class="container" id="sobremi">
+    <div class="cont-menu" id="cont-menu">
+        <h2 style="width: 100%; background-color: #111113; color: #fff; font-size: 1rem; padding: 3px 10px;">Menu</h2>
+        <div style="padding: 10px;">
+            <a href="#"><i class="ri-terminal-line"></i>Inicio</a>
+            <a href="#servicios"><i class="ri-terminal-line"></i>Servicios</a>
+            <a href="#proyectos"><i class="ri-terminal-line"></i>Proyectos</a>
+            <a href="#skills"><i class="ri-terminal-line"></i>Skills</a>
+            <a href="#contacto"><i class="ri-terminal-line"></i>Contacto</a>
+        </div>
+    </div>
+    <div class="blur1"></div>
+    <section id="home" style="height: 50px;"></section>
+    <header class="container-header">
         <div class="content">
-            <span class="blur"></span>
-            <span class="blur"></span>
             <h4>Contrata mis sevicios</h4>
-            <H1><span>Yoswel Badilla</span>, Desarrollador de Software y Analista Junior en Ciberseguridad</H1>
+            <h1><span>Yoswel Badilla < A.k.a  Vishok /></A.k.a></span>, Desarrollador de Software y Analista Junior en Ciberseguridad</h1>
             <p>
                 Ingenierío Informático en busca de oportunidades para adquirir experiencia en áreas
                 como el Desarrollo y la Ciberseguridad. Disfruto colaborar en equipo y brindar
@@ -45,38 +56,18 @@
             </p>
             <div class="social-media">
                 <div class="cont-social-media">
-                    <div>
-                        <a href="https://facebook.com/yoswell.badilla.7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> <path fill="#ffffff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" /> </svg></a>
-                        <p>Ver mi Facebook</p>
-                    </div>
+                    <a href="https://www.linkedin.com/in/yoswel-badilla-cyberjr/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> <path fill="#fff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" /> </svg></a>
                 </div>
                 <div class="cont-social-media">
-                    <div>
-                        <a href="https://www.instagram.com/_yossb_?r=nametag"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> <path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" /> </svg></a>
-                        <p>Ver mi Instagram</p>
-                    </div>
+                    <a href="https://github.com/Yoswell"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> <path fill="#fff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /> </svg></a>
                 </div>
                 <div class="cont-social-media">
-                    <div>
-                        <a href="https://www.linkedin.com/in/yoswel-badilla-7bb654212/?locale=en_US"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> <path fill="#ffffff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" /> </svg></a>
-                        <p>Ver mi Linkedin</p>
-                    </div>
-                </div>
-                <div class="cont-social-media">
-                    <div>
-                        <a href="https://github.com/Yoswell"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> <path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /> </svg></a>
-                        <p>Ver mi Github</p>
-                    </div>
-                </div>
-                <div class="cont-social-media">
-                    <div>
-                        <a href="https://drive.google.com/file/d/1qEa59yd1BmLJerpx1eF-zsTo8a3G4Hfz/view?usp=sharing"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></a>
-                        <p>Descargar CV</p>
-                    </div>
+                    <a href="assests/CV_Actualizado.pdf" download="CV_YoswelBadilla.pdf"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fff" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" download="https://drive.google.com/file/d/1qEa59yd1BmLJerpx1eF-zsTo8a3G4Hfz/view?usp=sharing"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fff" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></a>
                 </div>
             </div>
         </div>
-        <div class="image">
+        <div class="content-image">
+            <img src="images/Yo.png">
         </div>
     </header>
     <section id="experiencia" style="height: 50px;"></section>
@@ -102,7 +93,7 @@
         </div>
     </section>
     <section id="servicios" style="height: 40px;"></section>
-    <section class="container">
+    <section class="container scroll-element js-scroll fade-in-bottom">
         <h2 class="header">Mis Servicios</h2>
         <p class="sub-header">
             A continuacion te presento algunos de los servicios que ofresco
@@ -117,7 +108,7 @@
                         relacionados con informática. Desde la investigación hasta la redacción, puedo
                         ayudarte a alcanzar tus objetivos académicos con calidad y precisión
                     </p>
-                    <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+                    <a href="#contacto">Contratar servicio <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
             <div class="card">
@@ -129,7 +120,7 @@
                         la creación de sitios web estáticos hasta aplicaciones web dinámicas, puedo ayudarte a
                         construir una presencia en línea robusta y escalable que impulse tu éxito en la web
                     </p>
-                    <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+                    <a href="#contacto">Contratar servicio <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
             <div class="card">
@@ -142,7 +133,7 @@
                         complejas, estoy aquí para ofrecerte soluciones innovadoras que impulsen el
                         crecimiento de tu negocio
                     </p>
-                    <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+                    <a href="#contacto">Contratar servicio <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
             <div class="card">
@@ -154,7 +145,7 @@
                         aplicaciones funcionen de manera óptima. Desde actualizaciones regulares hasta resolución
                         de problemas, me encargo de que tu infraestructura tecnológica esté siempre en su mejor estado
                     </p>
-                    <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+                    <a href="#contacto">Contratar servicio <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
             <div class="card">
@@ -166,7 +157,7 @@
                         Desde evaluaciones de vulnerabilidades hasta auditorías de seguridad completas, ofrezco soluciones
                         que garantizan la protección de tu negocio contra amenazas cibernéticas
                     </p>
-                    <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+                    <a href="#contacto">Contratar servicio <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
             <div class="card">
@@ -178,13 +169,13 @@
                         fundamentos hasta técnicas avanzadas para estudiantes, profesionales
                         y equipos corporativos que buscan mejorar sus habilidades y conocimientos
                     </p>
-                    <a href="#">Contratar servicio <i class="ri-arrow-right-line"></i></a>
+                    <a href="#contacto">Contratar servicio <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
         </div>
     </section>
     <section id="proyectos" style="height: 40px;"></section>
-    <section class="container">
+    <section class="container scroll-element js-scroll fade-in-bottom">
         <h2 class="header">Proyectos</h2>
         <p class="sub-header">
             A continuacion te presento algunos de mis proyectos que considero como los mas relevantes (no todos)
@@ -193,155 +184,168 @@
             <div class="card">
                 <div class="content">
                     <img src="images/m.png">
-                    <h4 class="verde">Aplicacion desktop de matricula estudiantil (Desktop)</h4>
-                    <p>
-                        <i class="verde ri-checkbox-circle-line"></i>
-                        Esta aplicación de escritorio, desarrollada en Java, está
-                        diseñada para facilitar la gestión de cursos educativos en instituciones académicas como
-                        colegios, escuelas y universidades
-                    </p>
-                    <a href="https://github.com/Yoswell/App_Cursos_Educativos_Desktop">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="verde">Aplicacion desktop de matricula estudiantil (Desktop)</h4>
+                        <p>
+                            Esta aplicación de escritorio, desarrollada en Java, está
+                            diseñada para facilitar la gestión de cursos educativos en instituciones académicas como
+                            colegios, escuelas y universidades
+                        </p>
+                        <a href="https://github.com/Yoswell/App_Cursos_Educativos_Desktop">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m3.png">
-                    <h4 class="purple">Aplicacion de afiliacion de gimnasios a la ANGCS</h4>
-                    <p>
-                        <i class="purple ri-checkbox-circle-line"></i>
-                        Este programa ofrece una solución integral para el registro y
-                        gestión de gimnasios afiliados a la Asociación Nacional de Gimnasios y Centros de Salud
-                    </p>
-                    <a href="https://github.com/Yoswell/REGISTRO_D_GIMNASIOS">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="purple">Aplicacion de afiliacion de gimnasios a la ANGCS</h4>
+                        <p>
+                            Este programa ofrece una solución integral para el registro y
+                            gestión de gimnasios afiliados a la Asociación Nacional de Gimnasios y Centros de Salud
+                        </p>
+                        <a href="https://github.com/Yoswell/REGISTRO_D_GIMNASIOS">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m4.png">
-                    <h4 class="green">Aplicacion de registro de peliculas de Streaming</h4>
-                    <p>
-                        <i class="green ri-checkbox-circle-line"></i>
-                        Aplicacion que ofrece una solución para gestionar películas por
-                        proveedor de streaming
-                    </p>
-                    <a href="https://github.com/Yoswell/REGISTRO_D_PELICULAS_D_STREAMING">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="green">Aplicacion de registro de peliculas de Streaming</h4>
+                        <p>
+                            Aplicacion que ofrece una solución para gestionar películas por
+                            proveedor de streaming
+                        </p>
+                        <a href="https://github.com/Yoswell/REGISTRO_D_PELICULAS_D_STREAMING">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m7.png">
-                    <h4 class="orange">Consersor a moneda entre 5 paises</h4>
-                    <p>
-                        <i class="orange ri-checkbox-circle-line"></i>
-                        Esta aplicacion es un conversor de una moneda a otra, conteniendo
-                        en total hasta 5 diferentes monedas a nivel mundial como el Euro, el Colon, el
-                        Dolar, etc...
-                    </p>
-                    <a href="https://github.com/Yoswell/Conversor_De_Monedas">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="orange">Consersor a moneda entre 5 paises</h4>
+                        <p>
+                            Esta aplicacion es un conversor de una moneda a otra, conteniendo
+                            en total hasta 5 diferentes monedas a nivel mundial como el Euro, el Colon, el
+                            Dolar, etc...
+                        </p>
+                        <a href="https://github.com/Yoswell/Conversor_De_Monedas">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m8.png">
-                    <h4 class="red">Tienda de postales del mundial de Qatar</h4>
-                    <p>
-                        <i class="red ri-checkbox-circle-line"></i>
-                        Tienda para vender postales del libro de jugadores del Mundial de
-                        Qatar 2022, crea tu propia coleccion de postales y completa el libro
-                    </p>
-                    <a href="https://github.com/Yoswell/Tianda_De_Postales_Mundial_Qatar">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="red">Tienda de postales del mundial de Qatar</h4>
+                        <p>
+                            Tienda para vender postales del libro de jugadores del Mundial de
+                            Qatar 2022, crea tu propia coleccion de postales y completa el libro
+                        </p>
+                        <a href="https://github.com/Yoswell/Tianda_De_Postales_Mundial_Qatar">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m9.png">
-                    <h4 class="yellow">Aplicacion para gestionar una Biblioteca</h4>
-                    <p>
-                        <i class="yellow ri-checkbox-circle-line"></i>
-                        Aplicacion para gestionar el registro, obsolecencia de lirbos y
-                        busquedas de los mismo para poder prestarlos o alquilarnos de acuerdo a las
-                        necesidades de las personas
-                    </p>
+                    <div style="padding: 10px;">
+                        <h4 class="yellow">Aplicacion para gestionar una Biblioteca</h4>
+                        <p>
+                            Aplicacion para gestionar el registro, obsolecencia de lirbos y
+                            busquedas de los mismo para poder prestarlos o alquilarnos de acuerdo a las
+                            necesidades de las personas
+                        </p>
+                        <a href="">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m2.png">
-                    <h4 class="verde">Aplicacion clon de Microsoft Learn</h4>
-                    <p>
-                        <i class="verde ri-checkbox-circle-line"></i>
-                        Esta aplicación web es una réplica visualmente de la reconocida
-                        plataforma, Microsoft Learn. Aunque carece de funcionalidades interactivas, esta
-                        proyecto se centra exclusivamente en replicar la interfaz gráfica y la
-                        experiencia de usuario
-                    </p>
-                    <a href="https://github.com/Yoswell/Clone_Microsoft_Learn">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="verde">Aplicacion clon de Microsoft Learn</h4>
+                        <p>
+                            Esta aplicación web es una réplica visualmente de la reconocida
+                            plataforma, Microsoft Learn. Aunque carece de funcionalidades interactivas, esta
+                            proyecto se centra exclusivamente en replicar la interfaz gráfica y la
+                            experiencia de usuario
+                        </p>
+                        <a href="https://github.com/Yoswell/Clone_Microsoft_Learn">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m1.png">
-                    <h4 class="purple">Aplicacion clon de React DevTools</h4>
-                    <p>
-                        <i class="purple ri-checkbox-circle-line"></i>
-                        Esta aplicación web es una réplica inspirada en la conocida
-                        herramienta React DevTools, con funcionalidades basicas. Al igual que su
-                        homónima, esta aplicación permite a los desarrolladores inspeccionar aprender sobre React
-                    </p>
-                    <a href="https://github.com/Yoswell/Clone_ReactDev">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="purple">Aplicacion clon de React DevTools</h4>
+                        <p>
+                            Esta aplicación web es una réplica inspirada en la conocida
+                            herramienta React DevTools, con funcionalidades basicas. Al igual que su
+                            homónima, esta aplicación permite a los desarrolladores inspeccionar aprender sobre React
+                        </p>
+                        <a href="https://github.com/Yoswell/Clone_ReactDev">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m17.png">
-                    <h4 class="green">Aplicacion para matricula de cursos estudiantiles (movil)</h4>
-                    <p>
-                        <i class="green ri-checkbox-circle-line"></i>
-                        Este proyecto es un replica del proyecto: Aplicacion desktop de
-                        matricula estudiantil (Desktop) en java, diseñado para que los estudientes
-                        puedan matricular en su regreso a clases
-                    </p>
-                    <a href="https://github.com/Yoswell/App_Cusros_Educativos">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="green">Aplicacion para matricula de cursos estudiantiles (movil)</h4>
+                        <p>
+                            Este proyecto es un replica del proyecto: Aplicacion desktop de
+                            matricula estudiantil (Desktop) en java, diseñado para que los estudientes
+                            puedan matricular en su regreso a clases
+                        </p>
+                        <a href="https://github.com/Yoswell/App_Cusros_Educativos">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m18.png">
-                    <h4 class="orange">Videojuego de Bingo (Desktop)</h4>
-                    <p>
-                        <i class="orange ri-checkbox-circle-line"></i>
-                        Esta aplicación fue desarrollada en C++ para ser ejecutada en consola, es un juego de bingo multijugador
-                        para dos personas en donde el primero en llenar el tablero de 0s gana
-                    </p>
-                    <a href="https://github.com/Yoswell/Juego_de_Bingo">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="orange">Videojuego de Bingo (Desktop)</h4>
+                        <p>
+                            Esta aplicación fue desarrollada en C++ para ser ejecutada en consola, es un juego de bingo multijugador
+                            para dos personas en donde el primero en llenar el tablero de 0s gana
+                        </p>
+                        <a href="https://github.com/Yoswell/Juego_de_Bingo">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m19.png">
-                    <h4 class="red">Videojuego Preguntados (Desktop)</h4>
-                    <p>
-                        <i class="red ri-checkbox-circle-line"></i>
-                        Esta aplicación fue desarrollada en C++ para ser ejecutada en consola
-                    </p>
-                    <a href="https://github.com/Yoswell/Juego_De_Preguntados">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="red">Videojuego Preguntados (Desktop)</h4>
+                        <p>
+                            Esta aplicación fue desarrollada en C++ para ser ejecutada en consola
+                        </p>
+                        <a href="https://github.com/Yoswell/Juego_De_Preguntados">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <img src="images/m5.png">
-                    <h4 class="yellow">Videojuego Serpientes y Escaleras (Desktop)</h4>
-                    <p>
-                        <i class="yellow ri-checkbox-circle-line"></i>
-                        Esta aplicación fue desarrollada en C++ para ser ejecutada en consola
-                    </p>
-                    <a href="https://github.com/Yoswell/Juego_Serpientes_Y_Escaleras">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    <div style="padding: 10px;">
+                        <h4 class="yellow">Videojuego Serpientes y Escaleras (Desktop)</h4>
+                        <p>
+                            Esta aplicación fue desarrollada en C++ para ser ejecutada en consola
+                        </p>
+                        <a href="https://github.com/Yoswell/Juego_Serpientes_Y_Escaleras">Ver repositorio <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="skills" style="height: 40px;"></section>
-    <section class="container">
+    <section class="container scroll-element js-scroll fade-in-bottom">
         <h2 class="header">Mis habilidades</h2>
         <p class="sub-header">
             A continuacion te presento mi stack de habilidades
@@ -362,7 +366,7 @@
             <div class="card">
                 <div>
                     <img src="images/icons8-c-sharp-logo-144.png">
-                    <p class="descript">C-Sharp</p>
+                    <p class="descript">C#</p>
                 </div>
             </div>
             <div class="card">
@@ -431,6 +435,23 @@
                     <p class="descript">Circuitos</p>
                 </div>
             </div>
+            <div class="card">
+                <div>
+                    <img src="images/icons8-net-framework-144.png">
+                    <p class="descript">.NET</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="images/icons8-seguridad-loro-144.png">
+                    <p class="descript">Parrot OS</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="images/icons8-splunk-144.png">
+                </div>
+            </div>
         </div>
     </section>
     <section id="contacto" style="height: 40px;"></section>
@@ -442,11 +463,6 @@
         <div class="contact">
             <form action="https://formspree.io/f/xqkjlrvd" method="POST">
                 <div class="row">
-                    <input type="text" class="contact-input" placeholder="Nombre" />
-                    <input type="text" class="contact-input" placeholder="Apellidos" />
-                </div>
-                <div class="row">
-                    <input type="text" class="contact-input" placeholder="Telefono" />
                     <input type="email" name="email" class="contact-input" placeholder="Email">
                 </div>
                 <div class="row">
@@ -458,6 +474,9 @@
             </form>
         </div>
     </section>
-    <script src="script.js"></script>
+    <button class="bottom-scroll" id="scrollTop">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <script src="main.js"></script>
 </body>
 </html>
