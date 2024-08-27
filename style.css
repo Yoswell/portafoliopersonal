@@ -665,22 +665,6 @@ section .header {
     }
 }
 
-.scrolled.fade-in-bottom { 
-    animation: fade-in-bottom 0.5s alternate;
-}
-
-@keyframes fade-in-bottom {
-    0% {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-}
-
 @media (width < 900px) {
     header {
         display: flex;
