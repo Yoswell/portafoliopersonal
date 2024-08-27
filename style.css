@@ -311,10 +311,11 @@ section .header {
         transition: all 0.3s ease;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
         border-radius:  10px 10px 0 0;
+        background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
 
         & div {
             height: 100%;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -331,22 +332,25 @@ section .header {
             & .yellow { color: #ffba05; }
 
             & span {
-                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 padding: 2px 9px;
                 font-size: 1.75rem;
-                color: #d7f9ff;
-                border-radius: 5px;
+                border-radius: 8px;
+                width: 50px;
+                height: 50px;
+                border: 2px solid #b6b6ffd2;
             }
     
             & h4 {
-                color: #2bdefd;
                 font-size: 1rem;
                 font-weight: 600;
+                padding-top: 0.8rem;
             }
 
             & h5 {
-                margin-bottom: 0.8rem;
-                color: #2bdefd;
+                padding-bottom: 0.8rem;
                 font-size: 0.9rem;
                 font-weight: 500;
             }
@@ -374,11 +378,12 @@ section .header {
         transition: all 0.3s ease;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
         border-radius:  10px 10px 0 0;
+        background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
 
         & div {
             position: relative;
             height: 100%;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -396,24 +401,29 @@ section .header {
             & .yellow { color: #ffba05; }
 
             & span {
-                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 padding: 2px 9px;
-                font-size: 1.85rem;
-                border-radius: 5px;
+                font-size: 1.75rem;
+                border-radius: 8px;
+                width: 50px;
+                height: 50px;
+                border: 2px solid #b6b6ffd2;
             }
 
             & h4 {
-                margin-bottom: 0.8rem;
-                color: #2bdefd;
+                padding: 0.8rem 0;
                 font-size: 0.9rem;
                 font-weight: 600;
             }
 
             & p {
                 color: #111113;
-                margin-bottom: 1.5rem;
+                padding-bottom: 1.5rem;
                 font-size: 0.8rem;
                 font-weight: 500;
+                flex: 1 1;
             }
 
             & a {
@@ -459,13 +469,14 @@ section .header {
         border-radius:  10px 10px 0 0;
         transition: all 0.3s ease;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
-    
+        background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
+
         & .content {
             position: relative;
             flex: 1;
             padding-bottom: 50px;
             border-radius:  8px 8px 0 0;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
 
             & a {
@@ -506,9 +517,10 @@ section .header {
         & .yellow { color: #ffba05; }
 
         & h4 {
-            margin-bottom: 1rem;
+            padding-bottom: 0.8rem;
             font-size: 0.9rem;
             font-weight: 600;
+            flex: 1 1;
         }
 
         & p {
@@ -531,10 +543,11 @@ section .header {
         transition: all 0.3s ease;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
         border-radius: 10px 10px 0 0;
+        background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
     
         & div {
             height: 100%;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             padding: 10px;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
             display: grid;
@@ -562,12 +575,13 @@ section .header {
     background-color: #eeeeee;
     border-radius: 10px 10px 0 0;
     padding: 2px;
+    background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
     
     & form {
         display: grid;
         padding: 10px;
         border-radius: 8px 8px 0 0;
-        background-color: #f4f4f4;
+        background-color: #f8f8f8;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
         
         & .row {
