@@ -675,11 +675,8 @@ section .header {
         background-image: url(none);
     }
 
-    .content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    .container-header {
+        padding-top: 4rem;
     }
 
     .content-image {
@@ -689,17 +686,12 @@ section .header {
     }
 
     .container {
-        padding: 0rem 2rem;
+        padding: 2rem;
     }
-    
+
     header .content h1 {
         font-size: 1.7rem;
         max-width: 100%;
-        text-align: center;
-    }
-
-    header .content p {
-        text-align: center;
     }
     
     header {
@@ -744,19 +736,13 @@ section .header {
     }
 
     .content-image img {
-        max-width: 300px;
+        max-width: 340px;
     }
 }
 
 @media (width > 680px) {
     .cont-menu {
         transform: translateX(-200%) !important;
-    }
-}
-
-@media (width < 650px) {
-    .content-image img {
-        max-width: 300px;
     }
 }
 
@@ -781,9 +767,5 @@ section .header {
 @media (width < 400px) {
     .skills {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .content-image img {
-        max-width: 250px;
     }
 }
