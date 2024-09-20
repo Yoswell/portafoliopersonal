@@ -23,7 +23,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    background-color: #131313;
     height: 100%;
 }
 
@@ -36,27 +36,26 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    border-bottom: 2px solid #01080e;
+    border-bottom: 2px solid #202020;
     position: fixed;
-    background-color: #fff;
+    background-color: #131313;
     z-index: 999;
 
     & .menu-button {
         display: grid;
         place-items: center;
-        width: 45px;
+        width: 40px;
         background-color: #111113;
         color: #fff;
         height: 100%;
-        border-radius: 6px;
-        font-size: 1.3rem;
-        border: 2px solid #999999;
+        font-size: 1.2rem;
+        border: 1px solid #999999;
         cursor: pointer;
         transition: all 0.3s ease;
         display: none;
         
         &:hover {
-            border-color: #111113;
+            border-color: #ff8c2a;
         }
     }
 }
@@ -69,7 +68,7 @@ nav {
     height: auto;
 
     h1 {
-        color: #111113;
+        color: #ff8c2a;
         font-size: 1.5rem;
     }
 
@@ -91,7 +90,7 @@ nav {
     font-size: 0.9rem;
     position: relative;
     padding-bottom: 0.5rem;
-    color: #111113;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -127,32 +126,31 @@ nav {
 }
 
 .blur1 {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 300px;
+    height: 360px;
     top: -300px;
     z-index: -1;
     border-radius: 50%;
-    box-shadow: 0px 0px 1000px hsla(249, 100%, 29%, 0.949);
+    box-shadow: 0px 0px 1000px hsl(17, 51%, 41%);
 }
 
 .bottom-scroll {
     position: fixed;
-    width: 45px;
+    width: 40px;
     height: 38px;
     bottom: 10px;
     right: 10px;
     background-color: #111113;
-    border-radius: 6px;
     color: #fff;
-    font-size: 1.5rem;
-    border: 2px solid #999999;
+    font-size: 1.4rem;
+    border: 1px solid #999999;
     cursor: pointer;
     z-index: 20px;
     transition: all 0.4s ease;
 
     &:hover {
-        border: 2px solid #111113;
+        border: 1px solid #ff8c2a;
     }
 }
 
@@ -163,7 +161,7 @@ nav {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #ffffffa0;
+    background-color: #131313c0;
     backdrop-filter: blur(5px);
     z-index: 100;
     display: flex;
@@ -176,8 +174,7 @@ nav {
         font-size: 0.9rem;
         position: relative;
         padding-bottom: 0.5rem;
-        color: #111113;
-        text-transform: uppercase;
+        color: #dadbd9;
         display: flex;
         align-items: center;
         font-weight: 600;
@@ -195,7 +192,7 @@ nav {
         width: 0;
         bottom: 0;
         left: 0;
-        background-color: #111113;
+        background-color: #ff8c2a;
         transition: all 0.3s ease;
     }
 
@@ -223,13 +220,12 @@ header {
             width: auto;
             height: 50px;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 15px) 100%,0 100%);
-            border-radius:  10px 10px 0 0;
             background-color: #999999;
-            padding: 2px;
+            padding: 1px;
             transition: all 0.4s ease;
             
             &:hover {
-                background-color: #111113;
+                background-color: #ff8c2a;
 
                 & div {
                     & p {
@@ -247,8 +243,7 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                clip-path: polygon(0 0,100% 0,100% calc(100% - 13px),calc(100% - 14px) 100%,0 100%);
-                border-radius:  8px 8px 0 0;
+                clip-path: polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 15px) 100%,0 100%);
                 background-color: #01080e;
                 height: 100%;
                 width: 100%;
@@ -261,20 +256,20 @@ header {
 
 header .content h4 {
     margin-bottom: 1rem;
-    color: #111113;
+    color: #ff8c2a;
     font-weight: 600;
 }
 
 header .content h1 {
-    color: #737373;
+    color: #999999;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.5rem;
 }
 
 header .content h1 span {
-   color: #111113;
+   color: #fff;
    font-size: 2.5rem;
 }
 
@@ -286,7 +281,7 @@ header .content p {
 }
 
 section .header {
-    color: #111113;
+    color: #dadbd9;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
@@ -295,7 +290,7 @@ section .header {
 .content-image {
     padding: 20px;
     & img {
-        width: 400px;
+        width: 350px;
     }
 }
 
@@ -306,23 +301,20 @@ section .header {
     gap: 1rem;
 
     & .card {
-        background-color: #e9eaea;
-        padding: 2px;
+        padding: 1px;
         transition: all 0.3s ease;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
-        border-radius:  10px 10px 0 0;
-        background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
+        background: linear-gradient(0deg, #202020, #a0572945, #a0572995, #a05729);
 
         & div {
             height: 100%;
-            background-color: #f8f8f8;
+            background-color: #101217;
             padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: stretch;
             justify-content: space-between;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
-            border-radius:  8px 8px 0 0;
         
             & .verde { color: #9cd33b; }
             & .purple { color: #7b71ff; }
@@ -337,10 +329,10 @@ section .header {
                 justify-content: center;
                 padding: 2px 9px;
                 font-size: 1.75rem;
-                border-radius: 8px;
+                border-radius: 8px 8px 8px 0;
                 width: 50px;
                 height: 50px;
-                border: 2px solid #b6b6ffd2;
+                border: 1px solid #404040;
             }
     
             & h4 {
@@ -356,7 +348,7 @@ section .header {
             }
     
             & p {
-                color: #111113;
+                color: #dadbd9;
                 margin-bottom: 1rem;
                 font-size: 0.8rem;
                 font-weight: 500;
@@ -373,24 +365,21 @@ section .header {
     gap: 1rem;
 
     & .card {
-        background-color: #eeeeee;
-        padding: 2px;
+        padding: 1px 1px;
         transition: all 0.3s ease;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
-        border-radius:  10px 10px 0 0;
-        background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
+        background: linear-gradient(0deg, #202020, #a0572945, #a0572995, #a05729);
 
         & div {
             position: relative;
             height: 100%;
-            background-color: #f8f8f8;
+            background-color: #101217;
             padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: stretch;
             justify-content: space-between;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
-            border-radius:  8px 8px 0 0;
             padding-bottom: 35px;
         
             & .verde { color: #9cd33b; }
@@ -406,10 +395,10 @@ section .header {
                 justify-content: center;
                 padding: 2px 9px;
                 font-size: 1.75rem;
-                border-radius: 8px;
+                border-radius: 8px 8px 8px 0;
                 width: 50px;
                 height: 50px;
-                border: 2px solid #b6b6ffd2;
+                border: 1px solid #404040;
             }
 
             & h4 {
@@ -419,7 +408,7 @@ section .header {
             }
 
             & p {
-                color: #111113;
+                color: #dadbd9;
                 padding-bottom: 1.5rem;
                 font-size: 0.8rem;
                 font-weight: 500;
@@ -427,9 +416,9 @@ section .header {
             }
 
             & a {
-                border: 2px solid #999999;
+                border: 1px solid #404040;
                 padding: 3px 10px;
-                background-color: #111113;
+                background-color: #13151c;
                 position: absolute;
                 bottom: 10px;
                 z-index: 900;
@@ -441,7 +430,7 @@ section .header {
                 transition: all 0.3s ease;
 
                 &:hover {
-                    border-color: #111113;
+                    border-color: #606060;
                 }
             }
         }
@@ -462,25 +451,22 @@ section .header {
     gap: 1rem;
 
     & .card {
-        padding: 2px;
-        background-color: #eeeeee;
+        padding: 1px;
         display: flex;
         flex-direction: column;
-        border-radius:  10px 10px 0 0;
         transition: all 0.3s ease;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
-        background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
+        background: linear-gradient(0deg, #202020, #a0572945, #a0572995, #a05729);
 
         & .content {
             position: relative;
             flex: 1;
             padding-bottom: 50px;
-            border-radius:  8px 8px 0 0;
-            background-color: #f8f8f8;
+            background-color: #101217;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
 
             & a {
-                border: 2px solid #999999;
+                border: 1px solid #404040;
                 padding: 3px 10px;
                 background-color: #111113;
                 position: absolute;
@@ -494,18 +480,15 @@ section .header {
                 transition: all 0.3s ease;
 
                 &:hover {
-                    border-color: #111113;
+                    border-color: #606060;
                 }
             }
 
-            & div {
-                flex: 1;
-            }
+            & div { flex: 1; }
 
             & img {
                 width: 100%;
                 padding-bottom: 10px;
-                border-radius: 8px;
             }
         }
     
@@ -524,7 +507,7 @@ section .header {
         }
 
         & p {
-            color: #111113;
+            color: #dadbd9;
             font-size: 0.8rem;
             font-weight: 500;
         }
@@ -538,21 +521,18 @@ section .header {
     gap: 1rem;
 
     & .card {
-        background-color: #eeeeee;
-        padding: 2px;
+        padding: 1px;
         transition: all 0.3s ease;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
-        border-radius: 10px 10px 0 0;
-        background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
+        background: linear-gradient(0deg, #202020, #a0572945, #a0572995, #a05729);
     
         & div {
             height: 100%;
-            background-color: #f8f8f8;
+            background-color: #101217;
             padding: 10px;
-            clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
+            clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
             display: grid;
             place-items: center;
-            border-radius: 8px 8px 0 0;
     
             img {
                 transition: all 0.3s ease;
@@ -560,7 +540,7 @@ section .header {
             }
     
             & p {
-                color: #111113;
+                color: #dadbd9;
                 font-weight: 600;
                 padding-top: 10px;
                 font-size: 0.9rem;
@@ -572,17 +552,14 @@ section .header {
 .contact {
     margin-top: 2rem;
     clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
-    background-color: #eeeeee;
-    border-radius: 10px 10px 0 0;
-    padding: 2px;
-    background: linear-gradient(0deg, #e9eaea, #acacf56a, #acacf5c1, #b6b6ffd2);
+    padding: 1px;
+    background: linear-gradient(0deg, #202020, #a0572945, #a0572995, #a05729);
     
     & form {
         display: grid;
         padding: 10px;
-        border-radius: 8px 8px 0 0;
-        background-color: #f8f8f8;
-        clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
+        background-color: #101217;
+        clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
         
         & .row {
             display: flex;
@@ -596,16 +573,17 @@ section .header {
                 height: 40px;
                 padding-left: 10px;
                 font-size: 0.8rem;
-                color: #111113;
+                color: #dadbd9;
                 border-radius: 6px;
                 font-weight: 500;
-                background-color: #fff;
+                background-color: #101217;
                 font-family: 'Poppins', sans-serif;
-                border: 2px solid #e9eaea;
+                border: 1px solid #202020;
                 transition: all 0.3s ease;
+                border-radius: 6px 6px 6px 0;
 
                 &:focus {
-                    border: 2px solid #999999;
+                    border: 1px solid #404040;
                 }
             }
         }
@@ -619,24 +597,22 @@ section .header {
             padding-left: 10px;
             font-weight: 500;
             font-size: 0.8rem;
-            color: #111113;
-            background-color: #fff;
+            color: #dadbd9;
+            background-color: #101217;
             font-family: 'Poppins', sans-serif;
             resize: none;
             border-radius: 6px 6px 6px 0;
-            border: 2px solid #e9eaea;
+            border: 1px solid #202020;
             transition: all 0.3s ease;
 
             &:focus {
-                border: 2px solid #999999;
+                border: 1px solid #404040;
             }
         }
 
         & .cont-button {
             width: 200px;
             height: 30px;
-            padding: 2px;
-            background-color: #999999;
             transition: all 0.3s ease;
             border-radius: 6px 6px 6px 0;
 
@@ -647,7 +623,7 @@ section .header {
             & .btn {
                 width: 100%;
                 height: 100%;
-                color: #fff;
+                color: #dadbd9;
                 font-size: 0.9rem;
                 font-weight: 600;
                 background-color: #01080e;
@@ -656,12 +632,21 @@ section .header {
                 align-items: center;
                 justify-content: center;
                 border-radius: 5px 5px 5px 0;
+                border: 1px solid #404040;
+                transition: all 0.3s ease;
 
                 &:hover {
                     cursor: pointer;
+                    border: 1px solid #606060;
                 }
             }
         }
+    }
+}
+
+@media (width < 1300px) {
+    .content-image img {
+        max-width: 300px;
     }
 }
 
@@ -670,11 +655,10 @@ section .header {
         display: flex;
         flex-direction: column-reverse;
         margin-top: 0;
-        background-image: url(none);
     }
 
     .container-header {
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
 
     .content-image {
@@ -709,6 +693,11 @@ section .header {
         }
     }
 
+    .content-image img {
+        max-width: 300px;
+        padding-bottom: 2rem;
+    }
+
     .features {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -734,7 +723,7 @@ section .header {
     }
 
     .content-image img {
-        max-width: 340px;
+        max-width: 280px;
     }
 }
 
