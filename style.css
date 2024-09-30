@@ -308,7 +308,7 @@ section .header {
 
         & div {
             height: 100%;
-            background-color: #101217;
+            background-color: #111113;
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -373,7 +373,7 @@ section .header {
         & div {
             position: relative;
             height: 100%;
-            background-color: #101217;
+            background-color: #111113;
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -462,7 +462,7 @@ section .header {
             position: relative;
             flex: 1;
             padding-bottom: 50px;
-            background-color: #101217;
+            background-color: #111113;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 24px),calc(100% - 22px) 100%,0 100%);
 
             & a {
@@ -528,7 +528,7 @@ section .header {
     
         & div {
             height: 100%;
-            background-color: #101217;
+            background-color: #111113;
             padding: 10px;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
             display: grid;
@@ -558,7 +558,7 @@ section .header {
     & form {
         display: grid;
         padding: 10px;
-        background-color: #101217;
+        background-color: #111113;
         clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 23px) 100%,0 100%);
         
         & .row {
@@ -576,7 +576,7 @@ section .header {
                 color: #dadbd9;
                 border-radius: 6px;
                 font-weight: 500;
-                background-color: #101217;
+                background-color: #111113;
                 font-family: 'Poppins', sans-serif;
                 border: 1px solid #202020;
                 transition: all 0.3s ease;
@@ -598,7 +598,7 @@ section .header {
             font-weight: 500;
             font-size: 0.8rem;
             color: #dadbd9;
-            background-color: #101217;
+            background-color: #111113;
             font-family: 'Poppins', sans-serif;
             resize: none;
             border-radius: 6px 6px 6px 0;
