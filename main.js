@@ -1,16 +1,3 @@
-window.addEventListener("scroll", () => { 
-    handleScrollAnimation();
-});
-
-const scrollToTopBtn = document.getElementById('scrollTop');
-
-scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
 let clicked = false;
 
 document.getElementById('menu-bar').addEventListener('click', (e) => {
