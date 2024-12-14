@@ -39,7 +39,7 @@ document.getElementById('but-1').addEventListener('click', (e) => {
 
     document.getElementById('but-3').style.backgroundColor = '#090909';
     document.getElementById('but-2').style.backgroundColor = '#090909';
-    document.getElementById('but-1').style.backgroundColor = '#00ffc8';
+    document.getElementById('but-1').style.backgroundColor = '#8a94a8';
 });
 
 document.getElementById('but-2').addEventListener('click', (e) => {
@@ -60,9 +60,9 @@ document.getElementById('but-2').addEventListener('click', (e) => {
     var2.style.transform = 'translateX(0%)';
     var2.style.transition = '200ms';
 
-    document.getElementById('but-3').style.backgroundColor = '#090909';
-    document.getElementById('but-1').style.backgroundColor = '#090909';
-    document.getElementById('but-2').style.backgroundColor = '#00ffc8';
+    document.getElementById('but-3').style.backgroundColor = '#000';
+    document.getElementById('but-1').style.backgroundColor = '#000';
+    document.getElementById('but-2').style.backgroundColor = '#8a94a8';
 });
 
 document.getElementById('but-3').addEventListener('click', (e) => {
@@ -83,7 +83,7 @@ document.getElementById('but-3').addEventListener('click', (e) => {
     var3.style.transform = 'translateX(0%)';
     var3.style.transition = '200ms';
 
-    document.getElementById('but-1').style.backgroundColor = '#090909';
-    document.getElementById('but-2').style.backgroundColor = '#090909';
-    document.getElementById('but-3').style.backgroundColor = '#00ffc8';
+    document.getElementById('but-1').style.backgroundColor = '#000';
+    document.getElementById('but-2').style.backgroundColor = '#000';
+    document.getElementById('but-3').style.backgroundColor = '#8a94a8';
 });
