@@ -24,6 +24,7 @@ document.getElementById('but-1').addEventListener('click', (e) => {
     const var1 = document.getElementById('card-1');
     const var2 = document.getElementById('card-2');
     const var3 = document.getElementById('card-3');
+    const var4 = document.getElementById('card-4');
 
     var2.style.display = 'none';
     var2.style.transform = 'translateX(-2000%)';
@@ -33,12 +34,17 @@ document.getElementById('but-1').addEventListener('click', (e) => {
     var3.style.transform = 'translateX(-2000%)';
     var3.style.transition = '200ms';
 
+    var4.style.display = 'none';
+    var4.style.transform = 'translateX(-2000%)';
+    var4.style.transition = '200ms';
+
     var1.style.display = 'flex';
     var1.style.transform = 'translateX(0%)';
     var1.style.transition = '200ms';
 
-    document.getElementById('but-3').style.backgroundColor = '#2b191d';
     document.getElementById('but-2').style.backgroundColor = '#2b191d';
+    document.getElementById('but-4').style.backgroundColor = '#2b191d';
+    document.getElementById('but-3').style.backgroundColor = '#2b191d';
     document.getElementById('but-1').style.backgroundColor = '#ff4264';
 });
 
@@ -47,6 +53,7 @@ document.getElementById('but-2').addEventListener('click', (e) => {
     const var1 = document.getElementById('card-1');
     const var2 = document.getElementById('card-2');
     const var3 = document.getElementById('card-3');
+    const var4 = document.getElementById('card-4');
 
     var1.style.display = 'none';
     var1.style.transform = 'translateX(-2000%)';
@@ -56,12 +63,17 @@ document.getElementById('but-2').addEventListener('click', (e) => {
     var3.style.transform = 'translateX(-2000%)';
     var3.style.transition = '200ms';
 
+    var4.style.display = 'none';
+    var4.style.transform = 'translateX(-2000%)';
+    var4.style.transition = '200ms';
+
     var2.style.display = 'flex';
     var2.style.transform = 'translateX(0%)';
     var2.style.transition = '200ms';
 
-    document.getElementById('but-3').style.backgroundColor = '#2b191d';
     document.getElementById('but-1').style.backgroundColor = '#2b191d';
+    document.getElementById('but-4').style.backgroundColor = '#2b191d';
+    document.getElementById('but-3').style.backgroundColor = '#2b191d';
     document.getElementById('but-2').style.backgroundColor = '#ff4264';
 });
 
@@ -70,6 +82,7 @@ document.getElementById('but-3').addEventListener('click', (e) => {
     const var1 = document.getElementById('card-1');
     const var2 = document.getElementById('card-2');
     const var3 = document.getElementById('card-3');
+    const var4 = document.getElementById('card-4');
 
     var1.style.display = 'none';
     var1.style.transform = 'translateX(-2000%)';
@@ -79,11 +92,45 @@ document.getElementById('but-3').addEventListener('click', (e) => {
     var2.style.transform = 'translateX(-2000%)';
     var2.style.transition = '200ms';
 
+    var4.style.display = 'none';
+    var4.style.transform = 'translateX(-2000%)';
+    var4.style.transition = '200ms';
+
     var3.style.display = 'flex';
     var3.style.transform = 'translateX(0%)';
     var3.style.transition = '200ms';
 
     document.getElementById('but-1').style.backgroundColor = '#2b191d';
     document.getElementById('but-2').style.backgroundColor = '#2b191d';
+    document.getElementById('but-4').style.backgroundColor = '#2b191d';
     document.getElementById('but-3').style.backgroundColor = '#ff4264';
+});
+
+document.getElementById('but-4').addEventListener('click', (e) => {
+    e.preventDefault();
+    const var1 = document.getElementById('card-1');
+    const var2 = document.getElementById('card-2');
+    const var3 = document.getElementById('card-3');
+    const var4 = document.getElementById('card-4');
+
+    var1.style.display = 'none';
+    var1.style.transform = 'translateX(-2000%)';
+    var1.style.transition = '200ms';
+
+    var2.style.display = 'none';
+    var2.style.transform = 'translateX(-2000%)';
+    var2.style.transition = '200ms';
+
+    var3.style.display = 'none';
+    var3.style.transform = 'translateX(-2000%)';
+    var3.style.transition = '200ms';
+
+    var4.style.display = 'flex';
+    var4.style.transform = 'translateX(0%)';
+    var4.style.transition = '200ms';
+
+    document.getElementById('but-1').style.backgroundColor = '#2b191d';
+    document.getElementById('but-2').style.backgroundColor = '#2b191d';
+    document.getElementById('but-3').style.backgroundColor = '#2b191d';
+    document.getElementById('but-4').style.backgroundColor = '#ff4264';
 });
