@@ -80,8 +80,8 @@ body {
     
     & .cont-img2 {
         margin-right: 10px;
-        width: 80px !important;
-        height: 80px !important;
+        width: 80px;
+        height: 80px;
         border: 2px solid #fff;
         border-radius: 50%;
         background-image: url('images/Yo.png');
@@ -89,11 +89,6 @@ body {
         background-repeat: no-repeat;
         background-position-x: -60px;
         background-position-y: -15px;
-    }
-
-    & p {
-        padding-top: 1rem;
-        color: #a4b1cb;
     }
 }
 
@@ -119,7 +114,7 @@ header {
         padding: 0 5rem;
         padding-top: 10px;
 
-        & p { color: #a3a3a3; padding: 1rem 0; font-size: 16px; line-height: 24px; text-align: center; }
+        & p { color: #a3a3a3; padding: 1rem 0; font-size: 16px !important; line-height: 24px; text-align: center; }
     }
 
     & .social-media {
@@ -354,14 +349,14 @@ header {
             }
 
             & .content-code {
-                & span { font-size: 16px; word-wrap: break-word !important; overflow-wrap: anywhere !important; }
+                & span { font-size: 16px !important; word-wrap: break-word !important; overflow-wrap: anywhere !important; }
 
                 & .cont-info {
                     display: flex;
                     gap: 10px;
 
                     & div {
-                        padding: 5px 10px;
+                        padding: 5px 15px;
                         background-color: #202020;
                         border-radius: 20px;
                         color: #fff;
@@ -465,9 +460,16 @@ header {
                 & .cont-info-2 {
                     display: flex;
                     gap: 5px;
+                    
+                    & div {
+                        background-color: #070a0d !important;
+                        margin: 0;
+                        padding: 0;
+                    }
 
                     & img {
-                        width: 30px;
+                        min-width: 30px;
+                        max-width: 30px;
                     }
 
                     & .external-link {
@@ -608,6 +610,16 @@ header {
 
         & .content1 {
             padding: 0 20px;
+            max-width: 1200px;
+            width: 100%;
+    
+            & p { 
+                color: #a3a3a3; 
+                padding: 1rem 0; 
+                font-size: 16px !important; 
+                line-height: 24px; 
+                text-align: center; 
+            }
         }
     }
 
@@ -618,11 +630,11 @@ header {
             margin-right: 0;
             margin-bottom: 20px;
             margin-right: 10px;
-            width: 100px !important;
-            height: 100px !important;
-            background-size: 200px;
-            background-position-x: -50px;
-            background-position-y: -5px;
+            width: 130px;
+            height: 130px;
+            background-size: 300px;
+            background-position-x: -85px;
+            background-position-y: -15px;
         }
     }
     
