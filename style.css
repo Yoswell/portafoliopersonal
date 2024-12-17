@@ -344,26 +344,43 @@ header {
         margin: 0;
         
         & div {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
+            display: grid;
+            place-items: center;
             position: relative;
             border-radius: 16px;
             background-color: #0a0a0b;
             border: 2px solid #171718;
-            padding: 8px;
+            padding: 5px;
             
             & img {
-                width: 30px;
+                width: 36px;
                 border-radius: 8px;
+            }
+
+            &:hover {
+                & p {
+                    display: flex;
+                    z-index: 1000;
+                    scale: 1;
+                }
+                
+                & img {
+                    filter: brightness(0.5);
+                }
             }
             
             & p {
                 color: #a3a3a3;
                 font-weight: 400;
-                padding: 0 10px;
+                padding: 5px 10px;
                 border-radius: 8px;
                 white-space: nowrap;
+                position: absolute;
+                top: -40px;
+                scale: 0;
+                transition: 100ms;
+                background-color: #171718;
+                border: 1px solid #303030;
             }
         }
     }
@@ -464,7 +481,7 @@ header {
         height: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 5px;
         padding-bottom: 20px;
 
@@ -501,9 +518,7 @@ header {
 
             & .cont-info-project {
                 width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                display: grid;
                 padding-top: 25px;
                 gap: 20px;
 
@@ -518,13 +533,13 @@ header {
                     & p {
                         color: #a3a3a3;
                         font-size: 16px;
-                        max-width: 100ch;
                         line-height: 24px;
                     }
                 }
 
                 & .cont-info-2 {
                     display: flex;
+                    flex-wrap: wrap;
                     gap: 5px;
                     
                     & div {
@@ -540,7 +555,7 @@ header {
 
                     & .external-link {
                         height: 30px;
-                        width: 30px;
+                        padding: 0 10px;
                         display: grid;
                         place-items: center;
                         background-color: #2b191d;
