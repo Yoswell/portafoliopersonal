@@ -37,6 +37,7 @@ body {
     border-radius: 30px;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: inset 0 0 30px #202020;
 
     & .cont-links {
         width: 100%;
@@ -50,6 +51,7 @@ body {
             font-size: 20px;
             padding: 5px 15px;
             background-color: #2b191d;
+            box-shadow: inset 0 0 10px #41262c;
             border-radius: 40px;
             font-weight: 500;
         }
@@ -137,6 +139,7 @@ header {
             border-radius: 20px;
             background-color: #070a0d;
             background-color: #171718;
+            box-shadow: inset 0 0 10px #202020;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -148,6 +151,7 @@ header {
             &:hover {
                 background-color: #2b191d;
                 color: #ff4264;
+                box-shadow: inset 0 0 10px #41262c;
 
                 & i {
                     color: #ff4264;
@@ -161,6 +165,7 @@ header {
     & .active {
         background-color: #2b191d !important;
         color: #ff4264 !important;
+        box-shadow: inset 0 0 10px #41262c !important;
 
         & i { color: #ff4264 !important; }
     }
@@ -381,15 +386,15 @@ header {
                 transition: 100ms;
                 background-color: #171718;
                 border: 1px solid #303030;
+                box-shadow: inset 0 0 10px #202020;
             }
         }
     }
 
     & .content3 {
         max-width: 1200px;
-        display: flex;
         gap: 10px;
-        flex-wrap: wrap;
+        width: 100%;
 
         & .card-code {
             border-radius: 8px;
@@ -428,6 +433,10 @@ header {
             }
 
             & .content-code {
+                padding: 15px;
+                display: grid;
+                gap: 10px;
+                
                 & span { 
                     font-size: 16px !important; 
                     word-wrap: break-word !important; 
@@ -441,7 +450,8 @@ header {
                     & div {
                         padding: 5px 15px;
                         background-color: #202020;
-                        border-radius: 20px;
+                        box-shadow: inset 0 0 10px #303030;
+                        border-radius: 6px;
                         color: #fff;
                         font-size: 15px;
                         display: flex;
@@ -451,16 +461,16 @@ header {
                     }
                 }
 
-                & div { 
-                    color: #a9b2c3; 
+                & p { 
+                    color: #a3a3a3; 
                     font-family: "JetBrains Mono", monospace;
                     font-size: 16px;
-                    padding: 15px;
                     line-height: 24px;
                     font-weight: 400;
+                    max-width: 110ch;
                 }
 
-                & .main { color: #a9b2c3; }
+                & .main { color: #a3a3a3; }
 
                 & .option { color: #e06c75; }
 
@@ -559,9 +569,10 @@ header {
                         display: grid;
                         place-items: center;
                         background-color: #2b191d;
+                        box-shadow: inset 0 0 10px #41262c;
                         color: #ff4264;
                         text-align: center;
-                        border-radius: 8px;
+                        border-radius: 6px;
 
                         text-decoration: none;
                     }
@@ -654,10 +665,12 @@ header {
                     justify-content: center;
                     border-radius: 6px;
                     font-family: "Roboto", sans-serif !important;
+                    box-shadow: inset 0 0 10px #202020;
     
                     &:hover {
                         background-color: #2b191d;
                         color: #ff4264;
+                        box-shadow: inset 0 0 10px #41262c;
                     }
                 }
             }
