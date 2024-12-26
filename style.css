@@ -28,9 +28,11 @@
     box-sizing: border-box;
 }
 
-html { position: relative; 
+html {
+    position: relative; 
     scrollbar-color: var(--color-scrollbar) var(--color-bg) !important;
     scrollbar-width: thin !important; 
+    scroll-behavior: smooth;
 }
 
 body {
@@ -38,6 +40,7 @@ body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
     padding: 0 30px;
+    scroll-behavior: smooth;
 }
 
 .nav-bar {
@@ -49,11 +52,11 @@ body {
     align-items: center;
     position: fixed;
     top: 10px;
-    background-color: var(--color-bg);
     z-index: 2000;
     border-radius: 30px;
     left: 50%;
     transform: translateX(-50%);
+    backdrop-filter: blur(10px);
 
     & .cont-links {
         width: 100%;
@@ -92,7 +95,7 @@ body {
             & .link a {
                 text-decoration: none;
                 color: var(--color-font-primary);
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 15px;
 
                 &:hover {
@@ -341,6 +344,8 @@ header {
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid var(--color-border);
         
         & .content {
             overflow: hidden;
@@ -349,8 +354,6 @@ header {
             justify-content: center;
             gap: 20px;
             position: relative;
-            border-radius: 20px;
-            border: 1px solid var(--color-border);
 
             & img {
                 width: 100%;
@@ -539,7 +542,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 auto;
     margin-top: 30px;
 
@@ -551,6 +554,7 @@ footer {
     }
 }
 
+/*
 .blur1 {
     position: absolute;
     width: 200px;
@@ -586,6 +590,7 @@ footer {
     filter: blur(10px);
     box-shadow: 0 0 20px var(--color-shadow-inset);
 }
+*/
 
 @media (max-width: 1050px) {
     .services {
