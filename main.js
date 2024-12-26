@@ -45,3 +45,28 @@ document.getElementById('change-theme').addEventListener('click', (e) => {
     isDarkTheme = !isDarkTheme;
     setTheme(isDarkTheme ? colors_dark : colors_light);
 });
+
+let scrollTimeout = null;
+let currentScroll = window.scrollY || window.pageYOffset;
+
+window.addEventListener('wheel', (event) => {
+  event.preventDefault(); // Evita el scroll predeterminado
+
+  // Ajusta la cantidad de desplazamiento
+  const scrollAmount = event.deltaY * 0.5; // Reduce la velocidad del scroll
+  
+  currentScroll += scrollAmount;
+
+  // Anima el desplazamiento
+  if (!scrollTimeout) {
+    scrollTimeout = requestAnimationFrame(() => {
+      window.scrollTo({
+        top: currentScroll,
+        behavior: 'smooth'
+      });
+      scrollTimeout = null;
+    });
+  }
+}, { passive: false });
+
+  
