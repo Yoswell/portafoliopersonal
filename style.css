@@ -425,7 +425,6 @@ body {
             & img {
                 width: 100%;
                 border-radius: 10px;
-                filter: brightness(0.6);
             }
 
             & .cont-info-project {
@@ -472,6 +471,7 @@ body {
                 & .cont-info-2 {
                     display: flex;
                     flex-wrap: wrap;
+                    align-items: center;
                     gap: 5px;
                     z-index: 100;
                     box-shadow: 400px 100px 10px var(--color-blur);
@@ -495,12 +495,19 @@ body {
                         border-radius: 6px;
                         text-decoration: none;
                         font-size: 15px;
-
+                        
                         & img {
                             width: 25px;
                             margin-right: 5px;
                             border-radius: 8px;
                             border: 2px solid #0e0d0d;
+                            filter: saturate(0);
+                        }
+
+                        &:hover {
+                            & img {
+                                filter: saturate(1);
+                            }
                         }
                     }
                 }
@@ -515,6 +522,34 @@ body {
         grid-template-columns: 1fr 1fr;
         max-width: 1050px;
         gap: 15px;
+
+        & .card {
+            & .content {
+                & .cont-info-project {
+                    position: relative;
+    
+                    &::before {
+                        display: none;
+                    }
+    
+                    & .cont-info-1 {
+                        display: grid;
+                        gap: 15px;
+                        
+                        & h4 {
+                            font-size: 25px;
+                            margin-top: -3px;
+                            font-family: "Roboto", sans-serif;
+                            color: var(--color-font-primary);
+                        }
+
+                        & p {
+                            color: var(--color-font-secondary);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -689,10 +724,6 @@ body {
                         gap: 15px;
                         padding: 15px;
                         padding-bottom: 0;
-                        
-                        & p {
-                            font-size: 15px;
-                        }
                     }
 
                     & .cont-info-2 {
