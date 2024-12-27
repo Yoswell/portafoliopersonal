@@ -10,28 +10,53 @@
 </head>
 
 <body class="scroll-container">
+
+    <di class="spike1"></di>
+    <di class="spike2"></di>
+    <di class="spike3"></di>
     
     <nav class="nav-bar">
         <div class="cont-links">
-            <h1>Vishok</h1>
             <ul class="nav-links">
-                <li class="link"><a href="#about">Sobre mi</a></li>
-                <li class="link"><a href="#services">Servicios</a></li>
-                <li class="link"><a href="#proyectos">Proyectos</a></li>
-                <li class="link"><a href="#contact">Contacto</a></li>
+                <a class="link home-link" href="#about">
+                    <img src="images/Yo.png" loading="lazy" />
+                    <p>Inicio</p>
+                </a>
+                <a class="link" href="#experience">
+                    <i class="ri-flask-line"></i>
+                    <p>Experiencia</p>
+                </a>
+                <a class="link" href="#education">
+                    <i class="ri-graduation-cap-line"></i>
+                    <p>Educación</p>
+                </a>
+                <a class="link" href="#services">
+                    <i class="ri-service-fill"></i>
+                    <p>Servicios</p>
+                </a>
+                <a class="link" href="#proyectos">
+                    <i class="ri-code-line"></i>
+                    <p>Proyectos</p>
+                </a>
+                <a class="link" href="#contact">
+                    <i class="ri-contacts-line"></i>
+                    <p>Contacto</p>
+                </a>
+                <a class="link">
+                    <button class="change-theme" id="change-theme">
+                        <i class="ri-moon-cloudy-line"></i>
+                    </button>
+                </a>
             </ul>
-            <button class="change-theme" id="change-theme">
-                <i class="ri-moon-cloudy-line"></i>
-            </button>
         </div>
     </nav>
 
     <header></header>
 
-    <section class="separate-double" id="about">
+    <section class="separate-double" id="about" style="padding-top: 50px;">
         <div>
-            <h2 class="title">Sobre mí</h2>
-            <h4 class="sub-title">A continuación te cuento un poco sobre mi</h4>
+            <h2 class="title"></h2>
+            <h4 class="sub-title"></h4>
         </div>
     </section>
 
@@ -41,7 +66,10 @@
 
         <div class="cont-title">
             <div class="cont-img1"></div>
-            <div class="cont-img2"></div>
+            <div class="div-main">
+                <div></div>
+                Disponible para trabajar
+            </div>
         </div>
         <div class="content1">
             <h2 class="title">Yoswel Badilla - A.k.a Vishok</h2>
@@ -51,11 +79,7 @@
                 Entiendo que en el mundo digital actual, una aplicación no solo debe funcionar correctamente, sino también proteger los datos y la privacidad de sus usuarios frente a amenazas crecientes.  
                 Con una <span>mentalidad creativa</span> y una <span>atención meticulosa a los detalles</span>, aplico las <span>mejores prácticas</span> de desarrollo y <span>seguridad informática</span> para cada proyecto.  
                 Cada línea de código y cada decisión técnica están respaldadas por un enfoque <span>integral</span> y <span>orientado a resultados</span>, asegurando no solo cumplir los objetivos, sino también superar las expectativas.  
-                <br><br>
-                Mi formación abarca un amplio espectro de habilidades, que van desde la <span>programación avanzada</span> en tecnologías tanto <span>frontend</span> como <span>backend</span>, hasta el <span>análisis de vulnerabilidades</span> y la <span>respuesta ante incidentes</span>.  
-                Esta combinación me permite no solo desarrollar aplicaciones robustas, sino también identificar y mitigar posibles brechas de seguridad que puedan comprometer el sistema.  
-                Como <span>Analista de Ciberseguridad Jr</span>, mi enfoque está centrado en la <span>identificación proactiva</span> de amenazas, el <span>análisis forense</span> de incidentes y la implementación de estrategias efectivas para garantizar la <span>integridad</span>, <span>disponibilidad</span> y <span>confidencialidad</span> de la información crítica.  
-            </p>            
+                </p>            
         </div>
         <div class="social-media">
             <a href="https://www.linkedin.com/in/yoswel-badilla-cyberjr/" class="active cont-social-media">
@@ -66,14 +90,14 @@
                 <i class="ri-github-fill"></i>
                 GitHub
             </a>
-            <a href="assests/CV_YoswelBadilla.pdf" download="CV_YoswelBadilla.pdf" class="cont-social-media">
+            <a href="assests/CV_Actualizado.pdf" download="CV_YoswelBadilla.pdf" class="cont-social-media">
                 <i class="ri-download-cloud-line"></i>
-                Descargar CV
+                CV
             </a>
         </div>
     </section>
 
-    <section class="separate-double">
+    <section class="separate-double" id="experience">
         <div>
             <h2 class="title">Experiencia</h2>
             <h4 class="sub-title">A continuación te presento mi experiencia laboralmente hablando</h4>
@@ -113,7 +137,7 @@
         </div>
     </section>
 
-    <section class="separate-double">
+    <section class="separate-double" id="education">
         <div>
             <h2 class="title">Educación</h2>
             <h4 class="sub-title">A continuación te presento mi experiencia laboralmente hablando y un poco acerca de mi educación</h4>
@@ -466,10 +490,6 @@
         </div>
     </section>
 
-    <footer>
-        Developed by <span>Vishok</span>
-    </footer>
-    
     <script src="main.js"></script>
 </body>
 </html>
