@@ -13,7 +13,9 @@ const colors_dark = {
     '--color-font-secondary': '#a3a3a3',
     '--color-accent': '#ff4264',
     '--color-scrollbar': '#151c22',
-    '--color-blur-white': '#0a0a0a9c'
+    '--color-blur-white': '#0a0a0a9c',
+    '--color-blur-purple': '#1f0a30',
+    '--color-blur-pink': '#3d2329'
 }
 
 const colors_light = {
@@ -31,7 +33,9 @@ const colors_light = {
     '--color-font-secondary': '#555',
     '--color-accent': '#7b97d1',
     '--color-scrollbar': '#ccc',
-    '--color-blur-white': '#fdfdfd9c'
+    '--color-blur-white': '#fdfdfd9c',
+    '--color-blur-purple': '#6e4f88',
+    '--color-blur-pink': '#db90a2'
 }
 
 let isDarkTheme = true; // Por defecto está en modo oscuro
@@ -47,26 +51,3 @@ document.getElementById('change-theme').addEventListener('click', (e) => {
     isDarkTheme = !isDarkTheme;
     setTheme(isDarkTheme ? colors_dark : colors_light);
 });
-
-let scrollTimeout = null;
-let currentScroll = window.scrollY || window.pageYOffset;
-
-window.addEventListener('wheel', (event) => {
-  event.preventDefault(); // Evita el scroll predeterminado
-
-  // Ajusta la cantidad de desplazamiento
-  const scrollAmount = event.deltaY * 0.3; // Reduce la velocidad del scroll
-  
-  currentScroll += scrollAmount;
-
-  // Anima el desplazamiento
-  if (!scrollTimeout) {
-    scrollTimeout = requestAnimationFrame(() => {
-      window.scrollTo({
-        top: currentScroll,
-        behavior: 'smooth'
-      });
-      scrollTimeout = null;
-    });
-  }
-}, { passive: false });
