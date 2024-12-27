@@ -12,12 +12,13 @@ const colors_dark = {
     '--color-font-primary': '#fff',
     '--color-font-secondary': '#a3a3a3',
     '--color-accent': '#ff4264',
-    '--color-scrollbar': '#151c22'
+    '--color-scrollbar': '#151c22',
+    '--color-blur-white': '#0a0a0a9c'
 }
 
 const colors_light = {
     '--color-bg': '#ffffff',
-    '--color-bg-alt': '#f4f4f9',
+    '--color-bg-alt': '#e4e4e9',
     '--color-bg-hover': '#f4f4f9',
     '--color-primary': '#7b97d1',
     '--color-border': '#e4e4e9',
@@ -29,7 +30,8 @@ const colors_light = {
     '--color-font-primary': '#000',
     '--color-font-secondary': '#555',
     '--color-accent': '#7b97d1',
-    '--color-scrollbar': '#ccc'
+    '--color-scrollbar': '#ccc',
+    '--color-blur-white': '#fdfdfd9c'
 }
 
 let isDarkTheme = true; // Por defecto está en modo oscuro
@@ -53,7 +55,7 @@ window.addEventListener('wheel', (event) => {
   event.preventDefault(); // Evita el scroll predeterminado
 
   // Ajusta la cantidad de desplazamiento
-  const scrollAmount = event.deltaY * 0.5; // Reduce la velocidad del scroll
+  const scrollAmount = event.deltaY * 0.3; // Reduce la velocidad del scroll
   
   currentScroll += scrollAmount;
 
@@ -68,5 +70,3 @@ window.addEventListener('wheel', (event) => {
     });
   }
 }, { passive: false });
-
-  
