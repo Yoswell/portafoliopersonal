@@ -316,9 +316,22 @@ body {
     flex-direction: column;
     width: 100%;
     z-index: 1;
-    position: relative;
-
+    
+    & .blur2 {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        left: 0px;
+        z-index: -10;
+        top: -120px;
+        filter: blur(90px);
+        background: linear-gradient(90deg, var(--color-blur-purple), var(--color-blur-pink));
+        box-shadow: 0 0 300px var(--color-shadow-inset);
+    }
+    
     & .features2 {
+        position: relative;
         grid-template-columns: 1fr 1fr !important;
         
         & .card {
@@ -327,6 +340,7 @@ body {
     }
 
     & .features {
+        position: relative;
         max-width: 1050px;
         width: 100%;
         display: grid;
@@ -359,6 +373,10 @@ body {
             }
         }
     }
+}
+
+.card-2, .card-3 {
+    display: none !important;
 }
 
 .separate-double {
@@ -415,6 +433,18 @@ body {
         overflow: hidden;
         position: relative;
 
+        &:hover {
+            & .content {
+                & img {
+                    filter: brightness(1);
+                }
+
+                & .cont-info-project {
+                    opacity: 0;
+                }
+            }
+        }
+
         & .content {
             display: flex;
             align-items: flex-start;
@@ -425,6 +455,7 @@ body {
             & img {
                 width: 100%;
                 border-radius: 10px;
+                filter: brightness(0.6);
             }
 
             & .cont-info-project {
@@ -435,16 +466,17 @@ body {
                 bottom: 0;
                 left: 0;
                 padding: 20px;
+                opacity: 1;
+                transition: 300ms;
 
                 &::before {
                     position: absolute;
-                    width: 150%;
-                    height: 400px;
-                    background-color: var(--color-blur);
-                    filter: blur(200px);
+                    width: 300%;
+                    height: 500px;
+                    background: linear-gradient(To bottom, transparent 5%, #000000c2 20%);
                     display: block;
+                    filter: blur(100px);
                     content: '';
-                    left: -150px;
                 }
 
                 & .cont-info-1 {
@@ -484,21 +516,22 @@ body {
 
                     & .external-link {
                         height: 33px;
-                        padding: 0 15px 0 5px;
+                        padding: 0 15px 0 3px;
                         display: flex;
                         align-items: center;
-                        background-color: #070707;
-                        box-shadow: inset 0 0 10px #303030;
                         color: #fff;
                         backdrop-filter: blur(3px);
                         text-align: center;
                         border-radius: 10px;
                         text-decoration: none;
                         font-size: 15px;
+                        gap: 5px;
+                        border: 1px solid #303030;
                         
                         & img {
                             width: 25px;
-                            margin-right: 5px;
+                            margin-right: 3px;
+                            filter: brightness(1) !important;
                             border-radius: 8px;
                         }
 
@@ -534,6 +567,7 @@ body {
                     height: 100%;
                     display: grid;
                     position: relative;
+                    opacity: 1;
     
                     &::before {
                         display: none;
@@ -544,7 +578,7 @@ body {
                         gap: 15px;
                         
                         & h4 {
-                            font-size: 25px;
+                            font-size: 17px;
                             margin-top: -3px;
                             font-family: "Roboto", sans-serif;
                             color: var(--color-font-primary);
@@ -558,8 +592,8 @@ body {
                     & .cont-info-2 {
                         & .external-link {
                             background-color: var(--color-bg);
-                            box-shadow: inset 0 0 10px var(--color-shadow);
                             color: var(--color-font-primary);
+                            border: 1px solid var(--color-border);
                         }
                     }
                 }
