@@ -453,7 +453,7 @@ body {
                     display: block;
                     filter: blur(100px);
                     content: '';
-                    left: -90px;
+                    left: -150px;
                 }
 
                 & .cont-info-1 {
