@@ -453,6 +453,7 @@ body {
                     display: block;
                     filter: blur(100px);
                     content: '';
+                    left: -90px;
                 }
 
                 & .cont-info-1 {
@@ -473,6 +474,10 @@ body {
                         line-height: 24px;
                         z-index: 100;
                         max-width: 95ch;
+
+                        & span {
+                            color: #88fff5;
+                        }
                     }
                 }
 
