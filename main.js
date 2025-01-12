@@ -14,7 +14,9 @@ const colors_dark = {
     '--color-scrollbar': '#151c22',
     '--color-blur-white': '#0a0a0a9c',
     '--color-blur-purple': '#683196',
-    '--color-blur-pink': '#3d2329'
+    '--color-blur-pink': '#3d2329',
+    '--color-font-terciary': '#ae94de',
+    '--color-bg-light': '#ae94de'
 }
 
 const colors_light = {
@@ -34,7 +36,9 @@ const colors_light = {
     '--color-scrollbar': '#ccc',
     '--color-blur-white': '#fdfdfd9c',
     '--color-blur-purple': '#6e4f88',
-    '--color-blur-pink': '#db90a2'
+    '--color-blur-pink': '#db90a2',
+    '--color-font-terciary': '#41365e',
+    '--color-bg-hover-light': '#eee5ff'
 }
 
 let isDarkTheme = true; // Por defecto está en modo oscuro
