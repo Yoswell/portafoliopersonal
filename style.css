@@ -3,7 +3,7 @@
 
 :root {
     --color-bg: #050507;
-    --color-bg-alt: #09090a;
+    --color-bg-alt: #070708;
     --color-bg-hover: #180f10;
     --color-bg-hover-light: #180f10;
     --color-primary: #8446e7;
@@ -87,7 +87,9 @@ body {
     padding: 0 30px;
     scroll-behavior: smooth;
     background-color: var(--color-bg);
-    background-size: 400px;
+    background-size: 700px;
+    background-image: url('./images/nnnoise.svg');
+
 }
 
 .nav-bar {
@@ -97,7 +99,7 @@ body {
     display: flex;
     align-items: center;
     position: fixed;
-    bottom: 10px;
+    top: 10px;
     z-index: 2000;
     border-radius: 30px;
     left: 50%;
@@ -105,7 +107,7 @@ body {
     transform: translateX(-50%);
     backdrop-filter: blur(5px);
     background-color: var(--color-blur-white);
-    border: 1px solid var(--color-border-tree);
+    border: 2px solid var(--color-border);
 
     & .cont-links {
         width: 100%;
@@ -141,7 +143,7 @@ body {
             gap: 10px;
 
             & .home-link {
-                border: 2px solid var(--color-border-tree);
+                border: 2px solid var(--color-border);
             }
 
             & .link {
@@ -171,9 +173,7 @@ body {
                     }
                 }
 
-                & img {
-                    width: 100%;
-                }
+                & img { width: 100%; }
             }
 
             & i {
@@ -189,7 +189,7 @@ body {
                 font-size: 0;
                 transition: 200ms;
                 position: absolute;
-                top: -40px;
+                bottom: -40px;
                 background-color: var(--color-bg-alt);
                 padding: 5px 10px;
                 border: 1px solid var(--color-border-tree);
@@ -206,20 +206,20 @@ body {
 .cont-title {
     max-width: 1100px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: grid;
+    place-items: center;
+    gap: 15px;
 
     & .div-main {
         color: var(--color-font-primary);
         margin-left: 10px;
         padding: 5px 10px;
         background-color: var(--color-bg);
-        border: 1px solid var(--color-border-tree);
         border-radius: 20px;
         display: flex;
         align-items: center;
         gap: 5px;
+        border: 2px solid var(--color-border);
 
         & div {
             width: 12px;
@@ -231,10 +231,9 @@ body {
     }
     
     & .cont-img1 {
-        margin-right: 10px;
-        width: 80px;
-        height: 80px;
-        border: 2px solid var(--color-font-primary);
+        width: 130px;
+        height: 130px;
+        border: 2px solid var(--color-border);
         border-radius: 50%;
         background-image: url('images/Yo.png');
         background-size: 100%;
@@ -246,25 +245,29 @@ body {
     z-index: 1000 !important;
     width: 100%;
     display: grid;
-    place-items: start;
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
+    place-items: center;
+    padding-top: 50px;
   
     & .content1 {
         max-width: 1100px;
         width: 100%;
         padding-top: 10px;
+        display: grid;
+        place-items: center;
 
         & .title {
-            font-size: clamp(35px, 5vw, 50px);
+            font-size: clamp(35px, 5vw, 60px);
             font-weight: 900;
             position: relative;
+            text-align: center;
             color: var(--color-font-primary);
             font-family: "Righteous", serif;
             padding: 20px 0;
             margin: 0;
-            background: linear-gradient(50deg, var(--color-font-primary), var(--color-bg-alt));
+            background: linear-gradient(50deg, var(--color-bg-alt), var(--color-font-primary), var(--color-bg-alt));
             -webkit-background-clip: text;
             color: transparent;
 
@@ -273,10 +276,10 @@ body {
         & p { 
             color: var(--color-font-secondary); 
             padding: 15px 0; 
-            font-size: 16px !important; 
-            line-height: 24px; 
-            text-align: left; 
+            font-size: 17px !important; 
+            line-height: 28px; 
             font-weight: 400;
+            text-align: center;
 
             & span {
                 color: var(--color-font-primary);
@@ -291,7 +294,7 @@ body {
         padding-top: 10px;
 
         & .cont-social-media {
-            border-radius: 8px;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -301,7 +304,7 @@ body {
             font-size: 15px;
             font-weight: 500;
             transition: 150ms;
-            border: 1px solid var(--color-border-tree);
+            border: 2px solid var(--color-border);
 
             &:hover {
                 scale: 1.1;
@@ -433,8 +436,8 @@ body {
 
 .separate-double {
     z-index: 100;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    place-items: center;
     padding-top: 100px;
     padding-bottom: 30px;
     max-width: 1100px;
@@ -443,11 +446,11 @@ body {
     
     & div .title {
         font-size: clamp(30px, 4vw, 45px);
-        text-align: left;
+        text-align: center;
         width: 100%;
         font-weight: 600;
         font-family: "Righteous", serif;
-        background: linear-gradient(50deg, var(--color-font-primary), var(--color-bg-alt));
+        background: linear-gradient(50deg, var(--color-bg-alt), var(--color-font-primary), var(--color-bg-alt));
         -webkit-background-clip: text;
         color: transparent;
     }
@@ -462,10 +465,9 @@ body {
         line-height: 24px;
 
         & span {
-            padding: 0 8px 2px 8px;
+            padding: 1px 8px 3px 8px;
             background-color: var(--color-shadow-inset-one);
             border-right: 2px solid var(--color-accent);
-            border-radius: 3px 0 0 3px;
             color: var(--color-font-primary);
         }
     }
@@ -494,19 +496,8 @@ body {
         border: 1px dashed var(--color-border-tree);
         position: relative;
         background-color: var(--color-bg-alt);
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: '';
-            width: 100%;
-            height: 100%;
-            border: 1px dashed var(--color-border-tree);
-            background-color: var(--color-bg);
-            transform: rotate(3deg);
-            z-index: -1;
-        }
+        overflow: hidden;
+        border-radius: 20px;
 
         & .content {
             display: grid;
@@ -516,6 +507,12 @@ body {
             & img {
                 width: 100%;
                 z-index: 100;
+                scale: 1.2;
+                transition: 300ms;
+
+                &:hover {
+                    scale: 1;
+                }
             }
 
             & .cont-info-project {
@@ -527,6 +524,20 @@ body {
                 padding: 20px;
                 background-color: var(--color-bg-alt);
                 height: 100%;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    top: -20px;
+                    left: -50px;
+                    content: '';
+                    width: 150%;
+                    height: 150px;
+                    background: linear-gradient(To top, transparent 0%, var(--color-bg) 70%);
+                    filter: blur(20px);
+                    z-index: 100;
+                }
+        
                 
                 & .cont-info-1 {
                     display: grid;
@@ -554,8 +565,8 @@ body {
                         transition: max-height 0.5s ease-in-out; /* Controla la suavidad */
                       
                         &:hover {
-                          -webkit-line-clamp: unset; /* Desactiva la limitación */
-                          max-height: calc(10 * 24px); /* 10 líneas * altura de línea */
+                          -webkit-line-clamp: unset;
+                          max-height: calc(10 * 24px);
                           -webkit-line-clamp: 10;
                         }
                     }
@@ -578,23 +589,18 @@ body {
                     z-index: 100;
                     
                     & .external-link {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        display: grid;
+                        place-items: center;
                         color: #fff;
-                        backdrop-filter: blur(3px);
                         text-align: center;
                         text-decoration: none;
                         font-size: 15px;
                         box-shadow: inset 0px 0px 10px #303030;
-                        width: 30px;
                         height: 30px;
+                        padding: 0 15px;
                         border-radius: 8px;
-                        
-                        & img {
-                            width: 100%;
-                            filter: saturate(0) brightness(0.4);
-                        }
+
+                        & i { margin-top: -1px; }
                     }
                 }
             }
@@ -617,6 +623,7 @@ body {
             background-color: var(--color-bg-alt);
             position: relative;
             overflow: visible;
+            border-radius: 0;
             
             &::before {
                 position: absolute;
@@ -684,7 +691,7 @@ body {
     display: grid;
     place-items: center;
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     
     & img {
         position: absolute;
@@ -715,8 +722,9 @@ body {
                     height: 40px;
                     padding: 10px;
                     font-size: 16px;
-                    color: var(--color-font-secondary);
+                    color: var(--color-font-primary);
                     background-color: var(--color-bg);
+                    border-radius: 10px;
                     border: 1px dashed var(--color-border-tree);
                 }
 
@@ -727,10 +735,11 @@ body {
                     height: 300px;
                     font-weight: 400;
                     font-size: 16px;
-                    color: var(--color-font-secondary);
+                    color: var(--color-font-primary);
                     font-family: "Roboto", sans-serif;
                     resize: none;
                     background-color: var(--color-bg);
+                    border-radius: 10px;
                     border: 1px dashed var(--color-border-tree);
                 }
             }
@@ -741,7 +750,7 @@ body {
                 right: 10px;
     
                 & .btn {
-                    width: 80px;
+                    width: 90px;
                     padding: 8px 0;
                     color: var(--color-font-primary);
                     font-size: 15px;
@@ -749,9 +758,13 @@ body {
                     border-radius: 6px;
                     font-family: "Roboto", sans-serif !important;
                     background-color: var(--color-bg-alt);
-                    border: 1px solid var(--color-border-tree);
+                    border: 2px solid var(--color-border);
                     cursor: pointer;
                     transition: 200ms;
+
+                    &:hover {
+                        background-color: var(--color-border);
+                    }
                 }
             }
         }
